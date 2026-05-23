@@ -1,757 +1,913 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD Engineering & Supply | Solar Rooftop, Epoxy Floor, Waterproofing</title>
-    <meta name="description" content="บริการติดตั้ง Solar Rooftop, พื้น Epoxy Floor, PU Flooring และระบบกันซึมดาดฟ้าครบวงจร ควบคุมโดยวิศวกรผู้เชี่ยวชาญ เสนอราคาด่วนภายใน 24 ชั่วโมง">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://md-eng-th.github.io/MD-Eng.co.th/">
-    <meta property="og:title" content="MD Engineering & Supply | โซลาร์เซลล์ และระบบพื้นอุตสาหกรรมครบวงจร">
-    <meta property="og:description" content="ผู้นำด้านวิศวกรรมระบบพื้นและพลังงานสะอาด มุ่งเน้นคุณภาพ มาตรฐานโรงงานอุตสาหกรรมระดับประเทศ">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD Engineering and Supply Co., Ltd. | วิศวกรรมครบวงจร · โซล่าเซลล์ · พื้น Epoxy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Sarabun:wght@200;400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:  #060b18;
+  --navy2: #0d1428;
+  --navy3: #141c38;
+  --gold:  #e8a12a;
+  --gold2: #f5c765;
+  --solar: #ff7b35;
+  --solar2:#ffb347;
+  --teal:  #2dd4bf;
+  --teal2: #5eead4;
+  --green: #4ade80;
+  --text:  #edf2ff;
+  --muted: #8892b0;
+  --card:  rgba(18,26,54,0.88);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--navy);
+  color:var(--text);
+  font-family:'Kanit','Sarabun',sans-serif;
+  font-weight:300;
+  overflow-x:hidden;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+/* ── BACKGROUND ─────────────────────────────────────── */
+.bg-wrap{
+  position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;
+}
+.bg-wrap::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% 15%, rgba(255,123,53,.09) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 45% at 90% 75%, rgba(45,212,191,.06) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 60% at 50% 45%, rgba(232,161,42,.04) 0%, transparent 65%);
+}
+.grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(232,161,42,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232,161,42,.04) 1px, transparent 1px);
+  background-size:64px 64px;
+  animation:gridMove 25s linear infinite;
+}
+@keyframes gridMove{to{background-position:0 64px;}}
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        slate: {
-                            900: '#0B0F19',
-                            950: '#05070F',
-                            800: '#111827',
-                            700: '#1F2937',
-                        },
-                        amber: {
-                            500: '#F59E0B',
-                            600: '#D97706',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Prompt', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+/* ── NAV ─────────────────────────────────────────────── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  padding:.9rem 2.5rem;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(6,11,24,.88);
+  backdrop-filter:blur(22px);
+  border-bottom:1px solid rgba(232,161,42,.10);
+}
+.nav-brand{
+  font-size:1rem;font-weight:700;color:var(--gold);letter-spacing:.04em;
+}
+.nav-brand span{color:var(--text);font-weight:300;}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{font-size:.78rem;color:var(--muted);text-decoration:none;letter-spacing:.12em;transition:color .2s;}
+.nav-links a:hover{color:var(--gold);}
+.nav-cta{
+  background:rgba(232,161,42,.14);border:1px solid rgba(232,161,42,.32);
+  color:var(--gold2)!important;padding:.35rem 1.2rem;border-radius:100px;
+  transition:background .2s!important;
+}
+.nav-cta:hover{background:rgba(232,161,42,.26)!important;}
+@media(max-width:768px){.nav-links{display:none;}}
 
-    <style>
-        html { scroll-behavior: smooth; }
-        .blur-backdrop { backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
-        .masonry-grid { columns: 1; gap: 1.5rem; }
-        @media (min-width: 640px) { .masonry-grid { columns: 2; } }
-        @media (min-width: 1024px) { .masonry-grid { columns: 3; } }
-        .masonry-item { break-inside: avoid; margin-bottom: 1.5rem; }
-        
-        /* Premium UI Utility Styles */
-        .text-gradient {
-            background: linear-gradient(135deg, #FFFFFF 30%, #94A3B8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .text-brand-gradient {
-            background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .premium-card {
-            background: linear-gradient(180deg, rgba(17, 24, 39, 0.7) 0%, rgba(11, 15, 25, 0.9) 100%);
-            border: 1px border;
-            border-color: rgba(255, 255, 255, 0.05);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .premium-card:hover {
-            border-color: rgba(245, 158, 11, 0.3);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px -15px rgba(5, 7, 15, 0.7);
-        }
-        
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #05070F; }
-        ::-webkit-scrollbar-thumb { background: #1F2937; border-radius: 3px; }
-        ::-webkit-scrollbar-thumb:hover { background: #F59E0B; }
-    </style>
+/* ── TICKER ──────────────────────────────────────────── */
+.ticker-bar{
+  margin-top:60px;
+  background:linear-gradient(90deg, rgba(255,123,53,.09), rgba(232,161,42,.13), rgba(255,123,53,.09));
+  border-bottom:1px solid rgba(255,123,53,.18);
+  padding:.7rem 0;overflow:hidden;
+  font-size:.82rem;color:var(--solar2);letter-spacing:.07em;
+  position:relative;z-index:1;
+}
+.ticker-inner{
+  display:inline-block;white-space:nowrap;
+  animation:ticker 28s linear infinite;
+}
+@keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* ── HERO ────────────────────────────────────────────── */
+.hero{
+  position:relative;z-index:1;
+  min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:4rem 2rem 6rem;
+  overflow:hidden;
+}
+
+/* animated sun rings */
+.ring{
+  position:absolute;top:50%;left:50%;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  animation:ringPulse 5s ease-in-out infinite;
+  pointer-events:none;
+}
+.ring-1{width:640px;height:640px;border:1px solid rgba(255,123,53,.10);animation-delay:0s;}
+.ring-2{width:460px;height:460px;border:1px solid rgba(232,161,42,.14);animation-delay:-1.6s;}
+.ring-3{width:300px;height:300px;border:1px solid rgba(255,123,53,.20);animation-delay:-3.2s;}
+@keyframes ringPulse{
+  0%,100%{opacity:.5;transform:translate(-50%,-50%) scale(1);}
+  50%{opacity:1;transform:translate(-50%,-50%) scale(1.05);}
+}
+
+/* sun rays */
+.rays-wrap{
+  position:absolute;top:50%;left:50%;width:700px;height:700px;
+  transform:translate(-50%,-50%);
+  animation:rayRot 45s linear infinite;pointer-events:none;
+}
+.ray{
+  position:absolute;top:50%;left:50%;
+  width:1px;height:290px;
+  transform-origin:bottom center;
+  background:linear-gradient(to top, rgba(255,175,50,.11), transparent);
+}
+.ray:nth-child(1){transform:translateX(-50%) rotate(0deg)}
+.ray:nth-child(2){transform:translateX(-50%) rotate(15deg)}
+.ray:nth-child(3){transform:translateX(-50%) rotate(30deg)}
+.ray:nth-child(4){transform:translateX(-50%) rotate(45deg)}
+.ray:nth-child(5){transform:translateX(-50%) rotate(60deg)}
+.ray:nth-child(6){transform:translateX(-50%) rotate(75deg)}
+.ray:nth-child(7){transform:translateX(-50%) rotate(90deg)}
+.ray:nth-child(8){transform:translateX(-50%) rotate(105deg)}
+.ray:nth-child(9){transform:translateX(-50%) rotate(120deg)}
+.ray:nth-child(10){transform:translateX(-50%) rotate(135deg)}
+.ray:nth-child(11){transform:translateX(-50%) rotate(150deg)}
+.ray:nth-child(12){transform:translateX(-50%) rotate(165deg)}
+.ray:nth-child(13){transform:translateX(-50%) rotate(180deg)}
+.ray:nth-child(14){transform:translateX(-50%) rotate(195deg)}
+.ray:nth-child(15){transform:translateX(-50%) rotate(210deg)}
+.ray:nth-child(16){transform:translateX(-50%) rotate(225deg)}
+.ray:nth-child(17){transform:translateX(-50%) rotate(240deg)}
+.ray:nth-child(18){transform:translateX(-50%) rotate(255deg)}
+.ray:nth-child(19){transform:translateX(-50%) rotate(270deg)}
+.ray:nth-child(20){transform:translateX(-50%) rotate(285deg)}
+.ray:nth-child(21){transform:translateX(-50%) rotate(300deg)}
+.ray:nth-child(22){transform:translateX(-50%) rotate(315deg)}
+.ray:nth-child(23){transform:translateX(-50%) rotate(330deg)}
+.ray:nth-child(24){transform:translateX(-50%) rotate(345deg)}
+@keyframes rayRot{from{transform:translate(-50%,-50%) rotate(0deg);}to{transform:translate(-50%,-50%) rotate(360deg);}}
+
+.hero-inner{position:relative;z-index:2;}
+.badge{
+  display:inline-flex;align-items:center;gap:.55rem;
+  background:rgba(232,161,42,.11);border:1px solid rgba(232,161,42,.32);
+  border-radius:100px;padding:.45rem 1.4rem;
+  font-size:.72rem;letter-spacing:.2em;color:var(--gold2);text-transform:uppercase;
+  margin-bottom:2rem;animation:fadeUp .7s ease both;
+}
+.badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold);}
+.hero-title{
+  font-size:clamp(3rem,7.5vw,6.5rem);font-weight:800;
+  line-height:.95;letter-spacing:-.02em;
+  animation:fadeUp .7s ease .2s both;
+}
+.grad{
+  background:linear-gradient(135deg, var(--gold), var(--solar), var(--gold2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-en{
+  font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;
+  font-size:clamp(1.1rem,2.5vw,1.65rem);color:var(--muted);
+  margin-top:.6rem;letter-spacing:.05em;
+  animation:fadeUp .7s ease .35s both;
+}
+.hero-tag{
+  font-size:clamp(.88rem,1.8vw,1.1rem);font-weight:400;color:var(--teal2);
+  margin-top:1.6rem;letter-spacing:.04em;
+  animation:fadeUp .7s ease .5s both;
+}
+.hero-divider{
+  width:80px;height:2px;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin:2rem auto;animation:fadeUp .7s ease .6s both;
+}
+.hero-kpi{
+  display:flex;gap:3rem;justify-content:center;flex-wrap:wrap;
+  animation:fadeUp .7s ease .7s both;
+}
+.kpi-num{font-size:2.4rem;font-weight:800;background:linear-gradient(135deg,var(--gold),var(--solar2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.kpi-lbl{font-size:.72rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:.2rem;}
+.scroll-hint{
+  position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:.4rem;
+  font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);opacity:.5;animation:bounce 2.5s ease-in-out infinite;
+}
+.scroll-hint div{width:14px;height:14px;border-right:1px solid var(--muted);border-bottom:1px solid var(--muted);transform:rotate(45deg);}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(9px);}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── SECTION COMMON ──────────────────────────────────── */
+section{position:relative;z-index:1;padding:5.5rem 2rem;}
+.wrap{max-width:1200px;margin:0 auto;}
+.sec-label{
+  font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:.9rem;
+  display:flex;align-items:center;gap:.9rem;
+}
+.sec-label::before{content:'';width:28px;height:1px;background:var(--gold);}
+.sec-h{font-size:clamp(1.9rem,4vw,3rem);font-weight:700;line-height:1.1;margin-bottom:1.3rem;}
+.sec-p{font-size:.97rem;color:var(--muted);line-height:1.85;max-width:580px;}
+
+/* fade-in scroll */
+.fi{opacity:0;transform:translateY(38px);transition:opacity .7s ease,transform .7s ease;}
+.fi.vis{opacity:1;transform:translateY(0);}
+
+/* ── SOLAR POLICY BANNER ─────────────────────────────── */
+.solar-banner{
+  background:linear-gradient(135deg,#180600,#280a00,#180500);
+  border:1px solid rgba(255,123,53,.28);
+  border-radius:22px;padding:3rem 3.5rem;
+  position:relative;overflow:hidden;
+  box-shadow:0 0 60px rgba(255,123,53,.14), inset 0 1px 0 rgba(255,175,50,.18);
+}
+.solar-banner::before{
+  content:'';position:absolute;top:-40%;right:-8%;
+  width:520px;height:520px;
+  background:radial-gradient(circle, rgba(255,123,53,.12) 0%, transparent 65%);
+  pointer-events:none;
+}
+.solar-grid{
+  display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:center;
+  position:relative;z-index:1;
+}
+.solar-mini-badge{
+  display:inline-flex;align-items:center;gap:.45rem;
+  background:rgba(255,123,53,.18);border:1px solid rgba(255,123,53,.38);
+  border-radius:100px;padding:.28rem .95rem;
+  font-size:.68rem;color:var(--solar2);letter-spacing:.15em;text-transform:uppercase;
+  margin-bottom:.9rem;
+}
+.solar-h{font-size:clamp(1.5rem,3vw,2.4rem);font-weight:700;line-height:1.2;}
+.solar-h span{color:var(--solar);}
+.solar-desc{font-size:.92rem;color:#c9a890;margin-top:.8rem;line-height:1.75;}
+.tax-pill{
+  background:linear-gradient(135deg,rgba(255,123,53,.22),rgba(255,175,50,.18));
+  border:2px solid rgba(255,123,53,.48);
+  border-radius:18px;padding:1.6rem 2.2rem;
+  text-align:center;min-width:195px;
+  box-shadow:0 0 35px rgba(255,123,53,.22);
+}
+.tax-lbl{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--solar2);margin-bottom:.4rem;}
+.tax-num{
+  font-size:2.6rem;font-weight:800;color:var(--solar);line-height:1;
+  text-shadow:0 0 24px rgba(255,123,53,.6);
+}
+.tax-sub{font-size:.78rem;color:var(--solar2);margin-top:.3rem;}
+.policy-cards{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2rem;
+  position:relative;z-index:1;
+}
+.pc{
+  background:rgba(255,123,53,.06);
+  border:1px solid rgba(255,123,53,.18);
+  border-radius:14px;padding:1.4rem;text-align:center;
+  transition:transform .3s,box-shadow .3s;
+}
+.pc:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(255,123,53,.15);}
+.pc-icon{font-size:1.9rem;margin-bottom:.7rem;}
+.pc h4{font-size:.88rem;font-weight:600;color:var(--solar2);margin-bottom:.35rem;}
+.pc p{font-size:.76rem;color:var(--muted);line-height:1.65;}
+@media(max-width:768px){
+  .solar-grid{grid-template-columns:1fr;}
+  .tax-pill{margin:0 auto;}
+  .policy-cards{grid-template-columns:1fr;}
+}
+
+/* ── SERVICES ────────────────────────────────────────── */
+.services-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));
+  gap:1.4rem;margin-top:3rem;
+}
+.svc{
+  background:var(--card);
+  border:1px solid rgba(232,161,42,.11);
+  border-radius:18px;padding:2rem;
+  position:relative;overflow:hidden;
+  transition:transform .3s,border-color .3s,box-shadow .3s;
+  backdrop-filter:blur(10px);
+}
+.svc:hover{
+  transform:translateY(-7px);
+  border-color:rgba(232,161,42,.34);
+  box-shadow:0 22px 44px rgba(0,0,0,.38),0 0 32px rgba(232,161,42,.07);
+}
+.svc::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:0;transition:opacity .3s;
+}
+.svc:hover::before{opacity:1;}
+.svc-icon{
+  width:54px;height:54px;border-radius:13px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;margin-bottom:1.1rem;
+}
+.i-gold{background:rgba(232,161,42,.12);}
+.i-solar{background:rgba(255,123,53,.12);}
+.i-teal{background:rgba(45,212,191,.10);}
+.i-blue{background:rgba(99,148,255,.12);}
+.svc-name{font-size:1.05rem;font-weight:600;margin-bottom:.55rem;}
+.svc-desc{font-size:.85rem;color:var(--muted);line-height:1.72;}
+.svc-tag{
+  display:inline-block;margin-top:.9rem;
+  padding:.22rem .75rem;border-radius:100px;
+  font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;
+}
+.t-gold{background:rgba(232,161,42,.11);color:var(--gold2);border:1px solid rgba(232,161,42,.2);}
+.t-solar{background:rgba(255,123,53,.11);color:var(--solar2);border:1px solid rgba(255,123,53,.2);}
+.t-teal{background:rgba(45,212,191,.09);color:var(--teal2);border:1px solid rgba(45,212,191,.2);}
+
+/* ── STATS BAND ──────────────────────────────────────── */
+.stats-band{
+  position:relative;z-index:1;
+  background:linear-gradient(135deg,rgba(13,20,40,.92),rgba(20,28,56,.92));
+  border-top:1px solid rgba(232,161,42,.10);
+  border-bottom:1px solid rgba(232,161,42,.10);
+  padding:4rem 2rem;
+}
+.stats-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:2rem;max-width:1100px;margin:0 auto;text-align:center;
+}
+.sb-num{
+  font-size:3rem;font-weight:800;line-height:1;
+  background:linear-gradient(135deg,var(--gold),var(--solar));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.sb-unit{font-size:1.1rem;color:var(--gold2);}
+.sb-lbl{font-size:.77rem;color:var(--muted);margin-top:.4rem;letter-spacing:.08em;}
+@media(max-width:768px){.stats-grid{grid-template-columns:repeat(2,1fr);}}
+
+/* ── PROCESS ─────────────────────────────────────────── */
+.proc-row{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:4rem;align-items:center;margin-top:3rem;
+}
+.proc-list{list-style:none;}
+.proc-item{
+  display:flex;gap:1.5rem;margin-bottom:2rem;
+  position:relative;
+}
+.proc-item:not(:last-child)::after{
+  content:'';position:absolute;left:22px;top:50px;
+  width:1px;height:calc(100% - 10px);
+  background:linear-gradient(to bottom,rgba(232,161,42,.3),transparent);
+}
+.proc-num{
+  flex-shrink:0;width:44px;height:44px;border-radius:50%;
+  border:1px solid rgba(232,161,42,.38);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.84rem;font-weight:600;color:var(--gold);
+  background:rgba(232,161,42,.06);
+}
+.proc-text h4{font-size:1rem;font-weight:600;margin-bottom:.3rem;}
+.proc-text p{font-size:.84rem;color:var(--muted);line-height:1.65;}
+
+/* solar orbit visual */
+.orbit-wrap{
+  position:relative;height:360px;
+  display:flex;align-items:center;justify-content:center;
+}
+.orbit{
+  position:absolute;border-radius:50%;
+  border:1px dashed rgba(255,123,53,.22);
+}
+.o1{width:300px;height:300px;animation:spin 32s linear infinite;}
+.o2{width:210px;height:210px;animation:spin 22s linear infinite reverse;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.orbit-core{
+  position:absolute;
+  width:120px;height:120px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,175,50,.32) 0%,rgba(255,123,53,.14) 50%,transparent 70%);
+  display:flex;align-items:center;justify-content:center;
+  font-size:3.2rem;
+  box-shadow:0 0 50px rgba(255,123,53,.32),0 0 100px rgba(255,123,53,.10);
+  animation:coreGlow 3.5s ease-in-out infinite;
+  z-index:2;
+}
+@keyframes coreGlow{
+  0%,100%{box-shadow:0 0 50px rgba(255,123,53,.32),0 0 100px rgba(255,123,53,.10);}
+  50%{box-shadow:0 0 70px rgba(255,123,53,.55),0 0 140px rgba(255,123,53,.18);}
+}
+.orbit-tag{
+  position:absolute;
+  background:var(--card);border-radius:10px;padding:.55rem .95rem;
+  font-size:.73rem;white-space:nowrap;
+  backdrop-filter:blur(10px);border:1px solid rgba(232,161,42,.18);
+}
+.ot1{top:5px;right:-20px;color:var(--gold2);border-color:rgba(232,161,42,.28);}
+.ot2{bottom:25px;right:-30px;color:var(--teal2);border-color:rgba(45,212,191,.25);}
+.ot3{bottom:25px;left:-30px;color:var(--solar2);border-color:rgba(255,123,53,.25);}
+.ot4{top:5px;left:-20px;color:#c4b5fd;border-color:rgba(167,139,250,.25);}
+@media(max-width:768px){.proc-row{grid-template-columns:1fr;}.orbit-wrap{display:none;}}
+
+/* ── CONTACT ─────────────────────────────────────────── */
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:2.5rem;margin-top:3rem;
+}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr;}}
+
+.info-card{
+  background:var(--card);
+  border:1px solid rgba(45,212,191,.14);
+  border-radius:20px;padding:2.4rem;
+  backdrop-filter:blur(12px);
+}
+.info-card h3{
+  font-size:1.15rem;font-weight:600;color:var(--teal2);
+  margin-bottom:1.5rem;display:flex;align-items:center;gap:.55rem;
+}
+.ci{
+  display:flex;align-items:flex-start;gap:1rem;
+  padding:1rem 0;border-bottom:1px solid rgba(255,255,255,.05);
+}
+.ci:last-child{border-bottom:none;padding-bottom:0;}
+.ci-icon{
+  width:36px;height:36px;border-radius:9px;
+  background:rgba(45,212,191,.09);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;flex-shrink:0;
+}
+.ci-lbl{font-size:.63rem;color:var(--muted);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.2rem;}
+.ci-val{font-size:.94rem;line-height:1.55;}
+.ci-val a{color:var(--teal2);text-decoration:none;font-size:1.2rem;font-weight:700;}
+
+/* LINE card */
+.line-card{
+  background:linear-gradient(135deg,#001c0a,#003012);
+  border:1px solid rgba(0,200,80,.28);
+  border-radius:20px;padding:2.4rem;text-align:center;
+  box-shadow:0 0 45px rgba(0,200,80,.10);
+}
+.line-emo{font-size:2.8rem;margin-bottom:.4rem;}
+.line-title{font-size:1.35rem;font-weight:700;color:var(--green);margin-bottom:.2rem;}
+.line-sub{font-size:.76rem;color:#86efac;margin-bottom:1.4rem;letter-spacing:.1em;}
+.qr-wrap{
+  width:176px;height:176px;
+  background:#fff;border-radius:14px;
+  margin:0 auto 1.2rem;
+  display:flex;align-items:center;justify-content:center;
+  padding:6px;
+  box-shadow:0 0 24px rgba(0,200,80,.22);
+}
+.qr-wrap img{width:100%;height:100%;border-radius:8px;}
+.line-phone{font-size:1.7rem;font-weight:800;color:var(--green);letter-spacing:.04em;text-shadow:0 0 22px rgba(0,200,80,.45);}
+.line-phone-lbl{font-size:.68rem;color:#86efac;letter-spacing:.2em;text-transform:uppercase;margin-top:.2rem;}
+.line-note{
+  margin-top:1.4rem;padding:.9rem 1.1rem;
+  background:rgba(0,200,80,.09);
+  border-radius:11px;border:1px solid rgba(0,200,80,.18);
+}
+.line-note p{font-size:.76rem;color:#86efac;line-height:1.75;}
+
+/* map & address */
+.addr-wrap{
+  margin-top:2.2rem;
+  background:var(--card);border:1px solid rgba(232,161,42,.14);
+  border-radius:20px;padding:2.2rem;
+  display:flex;gap:2.5rem;align-items:flex-start;
+  backdrop-filter:blur(10px);
+}
+.addr-icon{
+  width:76px;height:76px;border-radius:18px;
+  background:rgba(232,161,42,.10);border:1px solid rgba(232,161,42,.2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.9rem;flex-shrink:0;
+}
+.addr-text h3{font-size:1.05rem;font-weight:600;color:var(--gold2);margin-bottom:.4rem;}
+.addr-text p{font-size:.92rem;color:var(--muted);line-height:1.8;}
+.map-frame{
+  width:100%;height:300px;border-radius:16px;margin-top:1.8rem;overflow:hidden;
+  border:1px solid rgba(232,161,42,.14);
+}
+.map-frame iframe{
+  width:100%;height:100%;border:none;
+  filter:invert(90%) hue-rotate(180deg) brightness(.9) saturate(.7);
+}
+@media(max-width:768px){.addr-wrap{flex-direction:column;gap:1.2rem;}}
+
+/* ── FOOTER ──────────────────────────────────────────── */
+footer{
+  position:relative;z-index:1;
+  background:linear-gradient(to top,#030509,var(--navy));
+  border-top:1px solid rgba(232,161,42,.10);
+  padding:3.5rem 2rem;text-align:center;
+}
+.footer-brand{
+  font-size:1.9rem;font-weight:800;
+  background:linear-gradient(135deg,var(--gold),var(--solar));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:.7rem;
+}
+.footer-th{font-size:.82rem;color:var(--muted);letter-spacing:.08em;}
+.footer-info{font-size:.8rem;color:var(--muted);margin-top:.9rem;line-height:1.85;}
+.footer-links{
+  display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1.8rem;
+}
+.footer-links a{
+  display:inline-flex;align-items:center;gap:.4rem;
+  padding:.38rem 1.1rem;border-radius:100px;
+  text-decoration:none;font-size:.78rem;
+  transition:background .2s;
+}
+.fl-fb{background:rgba(24,119,242,.14);border:1px solid rgba(24,119,242,.28);color:#93c5fd;}
+.fl-fb:hover{background:rgba(24,119,242,.24);}
+.fl-tel{background:rgba(45,212,191,.10);border:1px solid rgba(45,212,191,.24);color:var(--teal2);}
+.fl-tel:hover{background:rgba(45,212,191,.2);}
+.footer-copy{font-size:.68rem;color:rgba(136,146,176,.45);margin-top:2rem;letter-spacing:.05em;}
+</style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased overflow-x-hidden tracking-normal">
+<body>
 
-    <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/70 blur-backdrop border-b border-white/5 transition-all duration-300" id="main-header">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center space-x-3 group">
-                <div class="bg-amber-500 text-slate-950 w-10 h-10 flex items-center justify-center font-bold text-xl rounded shadow-lg shadow-amber-500/20">MD</div>
-                <div class="flex flex-col">
-                    <span class="text-base font-bold tracking-wider text-white group-hover:text-amber-500 transition-colors">MD ENGINEERING</span>
-                    <span class="text-[10px] text-slate-400 tracking-wider font-light uppercase">& SUPPLY CO., LTD.</span>
-                </div>
-            </a>
+<!-- bg -->
+<div class="bg-wrap"><div class="grid"></div></div>
 
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
-                <a href="#" class="text-amber-500 transition-colors">หน้าแรก</a>
-                <a href="#services" class="text-slate-300 hover:text-white transition-colors">บริการของเรา</a>
-                <a href="#projects" class="text-slate-300 hover:text-white transition-colors">ผลงานจริง</a>
-                <a href="#calculator" class="text-slate-300 hover:text-white transition-colors">คำนวณโซลาร์</a>
-                <a href="#about" class="text-slate-300 hover:text-white transition-colors">เกี่ยวกับเรา</a>
-                <a href="#contact" class="text-slate-300 hover:text-white transition-colors">ติดต่อ</a>
-            </nav>
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">MD<span> Engineering &amp; Supply</span></div>
+  <ul class="nav-links">
+    <li><a href="#solar">โซล่าเซลล์</a></li>
+    <li><a href="#services">บริการ</a></li>
+    <li><a href="#process">กระบวนการ</a></li>
+    <li><a href="#contact" class="nav-cta">📞 ติดต่อ</a></li>
+  </ul>
+</nav>
 
-            <div class="hidden md:block">
-                <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold px-5 py-2.5 rounded text-xs transition-all duration-300 transform hover:-translate-y-0.5 shadow-md shadow-amber-500/10">
-                    ขอใบเสนอราคาด่วน
-                </a>
-            </div>
+<!-- TICKER -->
+<div class="ticker-bar">
+  <div class="ticker-inner">
+    🌟 ติดตั้งโซล่าเซลล์ รัฐช่วยลดหย่อนภาษี 200,000 บาท &nbsp;|&nbsp;
+    ☎️ โทร 095-291-4565 &nbsp;|&nbsp;
+    🏗️ พื้น Epoxy &amp; PU มาตรฐานอุตสาหกรรม &nbsp;|&nbsp;
+    ⚡ ประหยัดค่าไฟสูงสุด 40% &nbsp;|&nbsp;
+    🔧 วิศวกรรมครบวงจร บางบัวทอง นนทบุรี &nbsp;|&nbsp;
+    🌟 ติดตั้งโซล่าเซลล์ รัฐช่วยลดหย่อนภาษี 200,000 บาท &nbsp;|&nbsp;
+    ☎️ โทร 095-291-4565 &nbsp;|&nbsp;
+    🏗️ พื้น Epoxy &amp; PU มาตรฐานอุตสาหกรรม &nbsp;|&nbsp;
+    ⚡ ประหยัดค่าไฟสูงสุด 40% &nbsp;|&nbsp;
+    🔧 วิศวกรรมครบวงจร บางบัวทอง นนทบุรี &nbsp;|&nbsp;
+  </div>
+</div>
 
-            <button class="md:hidden text-white focus:outline-none p-2" id="menu-btn" aria-label="Toggle Menu">
-                <i class="fa-solid fa-bars text-xl"></i>
-            </button>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="ring ring-1"></div>
+  <div class="ring ring-2"></div>
+  <div class="ring ring-3"></div>
+  <div class="rays-wrap">
+    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="badge">จดทะเบียนถูกต้อง · บางบัวทอง นนทบุรี</div>
+    <h1 class="hero-title">
+      <span class="grad">MD</span><br>Engineering<br>&amp; Supply
+    </h1>
+    <p class="hero-en">เอ็ม.ดี. เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด</p>
+    <p class="hero-tag">☀️ Solar Cell &nbsp;·&nbsp; 🏗️ Epoxy Floor &nbsp;·&nbsp; ⚡ Electrical System</p>
+    <div class="hero-divider"></div>
+    <div class="hero-kpi">
+      <div><div class="kpi-num">15+</div><div class="kpi-lbl">ปีประสบการณ์</div></div>
+      <div><div class="kpi-num">500+</div><div class="kpi-lbl">โปรเจคสำเร็จ</div></div>
+      <div><div class="kpi-num">200K</div><div class="kpi-lbl">ลดหย่อนภาษีโซล่า</div></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>เลื่อนดู</span><div></div></div>
+</section>
+
+<!-- ===== SOLAR BANNER ===== -->
+<section id="solar" style="padding:3rem 2rem 1rem">
+  <div class="wrap">
+    <div class="solar-banner fi">
+      <div class="solar-grid">
+        <div>
+          <div class="solar-mini-badge">🏛️ นโยบายรัฐบาล 2567–2568</div>
+          <h2 class="solar-h">
+            ติดตั้งโซล่าเซลล์<br>
+            <span>รัฐช่วยลดหย่อนภาษีสูงสุด</span>
+          </h2>
+          <p class="solar-desc">
+            ตามนโยบายส่งเสริมพลังงานสะอาด ผู้ที่ติดตั้งโซล่าเซลล์บนที่พักอาศัย
+            และอาคารพาณิชย์ สามารถนำค่าใช้จ่ายมาลดหย่อนภาษีได้สูงสุด
+            <strong style="color:var(--solar)">200,000 บาท</strong>
+            ประหยัดค่าไฟระยะยาว คืนทุนภายใน 2–4 ปี
+            ทีมวิศวกร MD Engineering ดูแลครบทุกขั้นตอน
+          </p>
         </div>
-
-        <div class="hidden md:hidden bg-slate-950/95 blur-backdrop border-b border-white/10" id="mobile-menu">
-            <div class="px-4 pt-2 pb-6 space-y-3 text-base font-medium">
-                <a href="#" class="block text-amber-500 py-2 border-b border-white/5">หน้าแรก</a>
-                <a href="#services" class="block text-slate-300 hover:text-white py-2 border-b border-white/5">บริการของเรา</a>
-                <a href="#projects" class="block text-slate-300 hover:text-white py-2 border-b border-white/5">ผลงานจริง</a>
-                <a href="#calculator" class="block text-slate-300 hover:text-white py-2 border-b border-white/5">คำนวณโซลาร์</a>
-                <a href="#about" class="block text-slate-300 hover:text-white py-2 border-b border-white/5">เกี่ยวกับเรา</a>
-                <a href="#contact" class="block text-slate-300 hover:text-white py-2 border-b border-white/5">ติดต่อ</a>
-                <a href="#contact" class="block bg-amber-500 text-slate-950 text-center font-bold py-3 rounded mt-4 shadow-lg shadow-amber-500/10">ขอใบเสนอราคาด่วน</a>
-            </div>
+        <div class="tax-pill">
+          <div class="tax-lbl">ลดหย่อนภาษีสูงสุด</div>
+          <div class="tax-num">200,000</div>
+          <div class="tax-sub">บาท / ท่าน</div>
         </div>
-    </header>
-
-    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-950">
-        <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] z-0"></div>
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920&auto=format&fit=crop" alt="Industrial Construction Grid" class="w-full h-full object-cover object-center opacity-10">
-            <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-transparent"></div>
+      </div>
+      <div class="policy-cards">
+        <div class="pc">
+          <div class="pc-icon">🏡</div>
+          <h4>บ้านพักอาศัย</h4>
+          <p>Solar Rooftop ประหยัดค่าไฟสูงสุด 40% รองรับระบบ On-Grid, Off-Grid และ Hybrid</p>
         </div>
-
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-8 space-y-8 text-left">
-                <div class="inline-flex items-center space-x-2 bg-slate-900 border border-white/10 px-4 py-1.5 rounded-full text-xs text-slate-300 font-medium">
-                    <span class="flex h-2 w-2 relative">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
-                    </span>
-                    <span>ผู้นำระบบพื้นอุตสาหกรรม และพลังงานสะอาดมาตรฐานสากล</span>
-                </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white">
-                    นึกถึงระบบพื้น <span class="text-brand-gradient">PU & Epoxy</span> คุณภาพสูง<br>
-                    ระบบกันซึม และติดตั้ง <span class="text-brand-gradient">Solar Rooftop</span><br>
-                    <span class="text-gradient font-light text-2xl sm:text-3xl lg:text-4xl block mt-2">ครบจบทุกงานวิศวกรรมโรงงานอุตสาหกรรม</span>
-                </h1>
-                <p class="text-base sm:text-lg text-slate-400 max-w-2xl font-light leading-relaxed">
-                    หยุดปัญหาพื้นหลุดร่อน ดาดฟ้ารั่วซึม หรือต้นทุนค่าไฟโรงงานสูงเกินความจำเป็น มั่นใจในโครงสร้างที่แข็งแรง ปลอดภัย และผ่านเกณฑ์มาตรฐานอุตสาหกรรม 100% โดยทีมวิศวกรผู้เชี่ยวชาญจาก MD Engineering
-                </p>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-white/5 max-w-xl">
-                    <div class="flex items-center space-x-3 text-slate-300">
-                        <i class="fa-solid fa-compass-drafting text-amber-500 text-lg"></i>
-                        <span class="text-sm">สำรวจหน้างานฟรีทั่วประเทศ</span>
-                    </div>
-                    <div class="flex items-center space-x-3 text-slate-300">
-                        <i class="fa-solid fa-chart-area text-amber-500 text-lg"></i>
-                        <span class="text-sm">ออกแบบจำลองระบบฟรี</span>
-                    </div>
-                    <div class="flex items-center space-x-3 text-slate-300">
-                        <i class="fa-solid fa-clock-rotate-left text-amber-500 text-lg"></i>
-                        <span class="text-sm">เสนอราคารวดเร็วใน 24 ชม.</span>
-                    </div>
-                </div>
-                <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="tel:0952914565" class="inline-flex items-center justify-center space-x-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-8 py-4 rounded transition-all transform hover:-translate-y-0.5 text-center shadow-lg shadow-amber-500/20">
-                        <i class="fa-solid fa-phone text-lg"></i>
-                        <span>โทรสายด่วน 095-291-4565</span>
-                    </a>
-                    <a href="https://line.me/ti/p/~mdengineering" target="_blank" class="inline-flex items-center justify-center space-x-3 bg-slate-900 hover:bg-slate-800 border border-white/10 text-white font-medium px-8 py-4 rounded transition-all transform hover:-translate-y-0.5 text-center">
-                        <i class="fa-brands fa-line text-green-500 text-xl"></i>
-                        <span>คุยงานผ่าน LINE</span>
-                    </a>
-                    <a href="#services" class="inline-flex items-center justify-center bg-transparent hover:bg-white/5 text-slate-400 hover:text-white px-6 py-4 rounded text-sm font-medium transition-colors text-center">
-                        ดูบริการของเราเพิ่มเติม <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="pc">
+          <div class="pc-icon">🏭</div>
+          <h4>โรงงาน / อุตสาหกรรม</h4>
+          <p>ลดต้นทุนการผลิต 20–40% เพิ่มความสามารถในการแข่งขัน ประหยัดพลังงานระยะยาว</p>
         </div>
-    </section>
-
-    <section class="relative z-20 -mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-slate-900/90 border border-white/5 rounded-xl shadow-2xl p-8 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-y-2 lg:divide-y-0 lg:divide-x divide-white/5 backdrop-blur-md">
-            <div class="pt-4 lg:pt-0">
-                <p class="text-4xl sm:text-5xl font-bold text-amber-500 tracking-tight font-mono">15+</p>
-                <p class="text-xs text-slate-400 mt-2 tracking-wide font-medium">ปีแห่งความเชี่ยวชาญ</p>
-            </div>
-            <div class="pt-6 lg:pt-0">
-                <p class="text-4xl sm:text-5xl font-bold text-white tracking-tight font-mono">100+</p>
-                <p class="text-xs text-slate-400 mt-2 tracking-wide font-medium">โรงงานชั้นนำเลือกใช้</p>
-            </div>
-            <div class="pt-6 lg:pt-0">
-                <p class="text-4xl sm:text-5xl font-bold text-white tracking-tight font-mono">100%</p>
-                <p class="text-xs text-slate-400 mt-2 tracking-wide font-medium">ควบคุมโดยวิศวกรวิชาชีพ</p>
-            </div>
-            <div class="pt-6 lg:pt-0">
-                <p class="text-4xl sm:text-5xl font-bold text-amber-500 tracking-tight font-mono">24 ชม.</p>
-                <p class="text-xs text-slate-400 mt-2 tracking-wide font-medium">รับเอกสารประเมินราคาด่วน</p>
-            </div>
+        <div class="pc">
+          <div class="pc-icon">📋</div>
+          <h4>ดำเนินการถูกกฎหมาย</h4>
+          <p>ยื่นขออนุญาตกับการไฟฟ้าครบทุกขั้นตอน พร้อมรับประกันระบบและบริการหลังการขาย</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="services" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-            <h2 class="text-xs font-bold text-amber-500 uppercase tracking-widest">Core Capabilities</h2>
-            <p class="text-3xl sm:text-4xl font-bold tracking-tight text-white">บริการมาตรฐานวิศวกรรมอุตสาหกรรม</p>
-            <div class="w-12 h-0.5 bg-amber-500 mx-auto rounded"></div>
-            <p class="text-slate-400 text-sm font-light">เราเลือกใช้เฉพาะวัสดุเกรดพรีเมียมที่เป็นมิตรต่อสิ่งแวดล้อมและมีความทนทานสูง ปรับตามประเภทและโครงสร้างการใช้งานจริง</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="premium-card rounded-lg p-6 flex flex-col justify-between group">
-                <div>
-                    <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-fill-drip"></i></div>
-                    <h3 class="text-lg font-bold text-white group-hover:text-amber-500 transition-colors mb-2">Epoxy Floor</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">ระบบพื้นเคลือบไร้รอยต่อ มีความมันเงาสูง ทำความสะอาดง่าย ป้องกันแบคทีเรีย คราบน้ำมัน และสารเคมี เหมาะสำหรับคลังสินค้า และโรงงานประกอบชิ้นส่วน</p>
-                </div>
-                <a href="#contact" class="text-amber-500 text-xs font-semibold tracking-wider uppercase inline-flex items-center mt-2 group-hover:underline">ติดต่อสอบถามข้อมูล <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-            </div>
-            <div class="premium-card rounded-lg p-6 flex flex-col justify-between group">
-                <div>
-                    <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-layer-group"></i></div>
-                    <h3 class="text-lg font-bold text-white group-hover:text-amber-500 transition-colors mb-2">PU Flooring</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">พื้นพียูหนาพิเศษ ทนทานต่อแรงกระแทกหนัก การเปลี่ยนแปลงอุณหภูมิเฉียบพลัน (-40°C ถึง 120°C) ปลอดภัยตามมาตรฐาน อย. GMP และ HACCP สำหรับโรงงานอาหารและยา</p>
-                </div>
-                <a href="#contact" class="text-amber-500 text-xs font-semibold tracking-wider uppercase inline-flex items-center mt-2 group-hover:underline">ติดต่อสอบถามข้อมูล <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-            </div>
-            <div class="premium-card rounded-lg p-6 flex flex-col justify-between group">
-                <div>
-                    <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-solar-panel"></i></div>
-                    <h3 class="text-lg font-bold text-white group-hover:text-amber-500 transition-colors mb-2">Solar Rooftop</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">บริการสำรวจ ออกแบบ ยื่นขออนุญาตขนานไฟ และติดตั้งระบบโซลาร์เซลล์บนหลังคาโรงงานและอาคาร เพื่อลดค่าไฟฟ้ารายเดือนอย่างยั่งยืน คืนทุนคุ้มค่า</p>
-                </div>
-                <a href="#calculator" class="text-amber-500 text-xs font-semibold tracking-wider uppercase inline-flex items-center mt-2 group-hover:underline">คำนวณความคุ้มค่า <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-            </div>
-            <div class="premium-card rounded-lg p-6 flex flex-col justify-between group">
-                <div>
-                    <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-droplet-slash"></i></div>
-                    <h3 class="text-lg font-bold text-white group-hover:text-amber-500 transition-colors mb-2">Waterproofing</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">ระบบกันซึมดาดฟ้า หลังคาคอนกรีต และโครงสร้างใต้ดิน ด้วยวัสดุ Acrylic/Polyurethane เกรดเข้มข้นสูง บล็อกปัญหารั่วซึมโครงสร้างเหล็กเสริมอย่างถาวร</p>
-                </div>
-                <a href="#contact" class="text-amber-500 text-xs font-semibold tracking-wider uppercase inline-flex items-center mt-2 group-hover:underline">ติดต่อสอบถามข้อมูล <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-            </div>
-            <div class="premium-card rounded-lg p-6 flex flex-col justify-between group">
-                <div>
-                    <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-building"></i></div>
-                    <h3 class="text-lg font-bold text-white group-hover:text-amber-500 transition-colors mb-2">Construction & Renovation</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">รับเหมาก่อสร้าง ปรับปรุงโครงสร้างโรงงาน คลังสินค้า ตอกเสาเข็ม เทพื้นคอนกรีตหนารองรับน้ำหนักเครื่องจักร และต่อเติมฟังก์ชันการใช้งานเชิงวิศวกรรม</p>
-                </div>
-                <a href="#contact" class="text-amber-500 text-xs font-semibold tracking-wider uppercase inline-flex items-center mt-2 group-hover:underline">ติดต่อสอบถามข้อมูล <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-            </div>
-            <div class="premium-card rounded-lg p-6 flex flex-col justify-between group">
-                <div>
-                    <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-box"></i></div>
-                    <h3 class="text-lg font-bold text-white group-hover:text-amber-500 transition-colors mb-2">Iso Wall & Cleanroom</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">ติดตั้งแผ่นฉนวนกันความร้อนแซนวิชพาเนล (Sandwich Panel) และออกแบบระบบห้องคลีนรูมควบคุมความสะอาด ฝุ่น และความชื้นตามระเบียบอุตสาหกรรม</p>
-                </div>
-                <a href="#contact" class="text-amber-500 text-xs font-semibold tracking-wider uppercase inline-flex items-center mt-2 group-hover:underline">ติดต่อสอบถามข้อมูล <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-            </div>
-            <div class="premium-card rounded-lg p-6 flex flex-col justify-between group">
-                <div>
-                    <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-bolt"></i></div>
-                    <h3 class="text-lg font-bold text-white group-hover:text-amber-500 transition-colors mb-2">Electrical System</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">งานวางระบบไฟฟ้าแรงสูง-แรงต่ำ ติดตั้งตู้ควบคุม MDB จัดระเบียบทางเดินสายไฟในราง และทดสอบเสถียรภาพการจ่ายพลังงานในโรงงาน</p>
-                </div>
-                <a href="#contact" class="text-amber-500 text-xs font-semibold tracking-wider uppercase inline-flex items-center mt-2 group-hover:underline">ติดต่อสอบถามข้อมูล <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-            </div>
-            <div class="premium-card rounded-lg p-6 flex flex-col justify-between group">
-                <div>
-                    <div class="text-amber-500 text-3xl mb-4"><i class="fa-solid fa-video"></i></div>
-                    <h3 class="text-lg font-bold text-white group-hover:text-amber-500 transition-colors mb-2">CCTV & Access Control</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">วางระบบรักษาความปลอดภัยเครือข่ายกล้อง IP Camera คมชัดสูงรอบพื้นที่โรงงาน พร้อมระบบบันทึกเวลา ประตูคีย์การ์ด และระบบแสกนใบหน้าสากล</p>
-                </div>
-                <a href="#contact" class="text-amber-500 text-xs font-semibold tracking-wider uppercase inline-flex items-center mt-2 group-hover:underline">ติดต่อสอบถามข้อมูล <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-24 bg-slate-900 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                <h2 class="text-xs font-bold text-amber-500 uppercase tracking-widest">Real Projects Showcase</h2>
-                <p class="text-3xl sm:text-4xl font-bold tracking-tight text-white">แกลเลอรี่ภาพผลงานจริงจากหน้างานบริษัท</p>
-                <div class="w-12 h-0.5 bg-amber-500 mx-auto rounded"></div>
-                <p class="text-slate-400 text-sm font-light">ข้อมูลอ้างอิงและภาพขั้นตอนการปฏิบัติงานจริง ถ่ายทอดระบบงานวิศวกรรมที่ถูกต้องเรียบร้อย</p>
-            </div>
-
-            <div class="masonry-grid">
-                <div class="masonry-item relative group overflow-hidden rounded bg-slate-950 border border-white/5 cursor-pointer" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" alt="งานเคลือบพื้นผิวพียูอุตสาหกรรมหนาพิเศษ" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
-                        <span class="text-amber-500 text-xs font-semibold mb-1 uppercase tracking-wider">PU Flooring</span>
-                        <h4 class="text-base font-bold text-white">งานเคลือบพื้นผิวพียูสำหรับคลังสินค้าอุปโภค</h4>
-                        <p class="text-slate-400 text-xs mt-1 font-light">เรียบเนียน ไร้รอยต่อ รองรับรถโฟล์คลิฟท์ขับเคลื่อนหนักอย่างสมบูรณ์</p>
-                    </div>
-                </div>
-
-                <div class="masonry-item relative group overflow-hidden rounded bg-slate-950 border border-white/5 cursor-pointer" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop" alt="งานติดตั้ง Solar Rooftop โรงงานผลิตอาหาร" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
-                        <span class="text-amber-500 text-xs font-semibold mb-1 uppercase tracking-wider">Solar Rooftop</span>
-                        <h4 class="text-base font-bold text-white">โครงข่ายแผงโซลาร์เซลล์ขนาดใหญ่ระดับอุตสาหกรรม</h4>
-                        <p class="text-slate-400 text-xs mt-1 font-light">ติดตั้งโครงสร้างยึดเกาะแน่นหนา ปลอดภัยต่อกำลังลมพายุ</p>
-                    </div>
-                </div>
-
-                <div class="masonry-item relative group overflow-hidden rounded bg-slate-950 border border-white/5 cursor-pointer" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop" alt="ระบบเคลือบกันซึมดาดฟ้าคอนกรีตอาคารโรงงาน" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
-                        <span class="text-amber-500 text-xs font-semibold mb-1 uppercase tracking-wider">Waterproofing</span>
-                        <h4 class="text-base font-bold text-white">งานเคลือบอะคริลิกพียูกันซึมดาดฟ้าโครงสร้างคอนกรีต</h4>
-                        <p class="text-slate-400 text-xs mt-1 font-light">บล็อกความชื้นถาวร ป้องกันโครงสร้างเหล็กด้านในผุกร่อน</p>
-                    </div>
-                </div>
-
-                <div class="masonry-item relative group overflow-hidden rounded bg-slate-950 border border-white/5 cursor-pointer" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" alt="งานเตรียมพื้นผิวขัดและทาสีพื้น Epoxy" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
-                        <span class="text-amber-500 text-xs font-semibold mb-1 uppercase tracking-wider">Epoxy Floor</span>
-                        <h4 class="text-base font-bold text-white">งานเทเคลือบสีพื้น Epoxy เงางามสะท้อนแสง</h4>
-                        <p class="text-slate-400 text-xs mt-1 font-light">เพิ่มความสว่าง ปลอดฝุ่นละออง ได้มาตรฐานห้องแล็บอุตสาหกรรม</p>
-                    </div>
-                </div>
-
-                <div class="masonry-item relative group overflow-hidden rounded bg-slate-950 border border-white/5 cursor-pointer" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop" alt="งานติดตั้งเหล็กโครงสร้างคลังสินค้า" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
-                        <span class="text-amber-500 text-xs font-semibold mb-1 uppercase tracking-wider">Construction</span>
-                        <h4 class="text-base font-bold text-white">โครงสร้างเหล็กนิรภัยอาคารโรงผลิตและคลังสินค้า</h4>
-                        <p class="text-slate-400 text-xs mt-1 font-light">ควบคุมงานเชื่อมเหล็กและโครงสร้างคานโดยทีมวิศวกรโยธา</p>
-                    </div>
-                </div>
-
-                <div class="masonry-item relative group overflow-hidden rounded bg-slate-950 border border-white/5 cursor-pointer" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1563714193019-1ba068108693?q=80&w=800&auto=format&fit=crop" alt="งานผนังไอโซวอลล์ป้องกันความร้อน" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
-                        <span class="text-amber-500 text-xs font-semibold mb-1 uppercase tracking-wider">Iso Wall</span>
-                        <h4 class="text-base font-bold text-white">ติดตั้งห้องเย็นคลีนรูม ผนัง Sandwich Panel ไร้ช่องว่าง</h4>
-                        <p class="text-slate-400 text-xs mt-1 font-light">รักษาและควบคุมอุณหภูมิคงที่เพื่อลดการทำงานของเครื่องปรับอากาศ</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-            <h2 class="text-xs font-bold text-amber-500 uppercase tracking-widest">Quality Metrics</h2>
-            <p class="text-3xl sm:text-4xl font-bold tracking-tight text-white">เปรียบเทียบมาตรฐานการซ่อมแซมหน้างาน</p>
-            <div class="w-12 h-0.5 bg-amber-500 mx-auto rounded"></div>
-            <p class="text-slate-400 text-sm font-light">ความแตกต่างที่ชัดเจนระหว่างพื้นผิวชำรุดทรุดโทรมเดิม กับผิวงานใหม่หลังผ่านกระบวนการวิศวกรรม</p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div class="space-y-4">
-                <div class="text-xs font-semibold text-slate-400 bg-slate-900 border border-white/5 px-3 py-1.5 rounded inline-block">Case Study 01: งานฟื้นฟูระบบพื้นผิวชำรุดโรงงานเคมี</div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="relative rounded overflow-hidden border border-white/5">
-                        <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=600&auto=format&fit=crop" alt="พื้นปูนกะเทาะเสียหาย" class="w-full h-48 object-cover">
-                        <div class="absolute top-2 left-2 bg-red-600/90 text-white text-[10px] font-bold tracking-wider px-2 py-0.5 rounded">BEFORE</div>
-                    </div>
-                    <div class="relative rounded overflow-hidden border border-amber-500/20">
-                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600&auto=format&fit=crop" alt="พื้นพียูติดตั้งเสร็จสมบูรณ์" class="w-full h-48 object-cover">
-                        <div class="absolute top-2 left-2 bg-green-600/90 text-white text-[10px] font-bold tracking-wider px-2 py-0.5 rounded">AFTER</div>
-                    </div>
-                </div>
-                <p class="text-xs text-slate-400 font-light leading-relaxed">พื้นเดิมมีรอยแตกหลุดล่อน ขรุขระ เป็นฝุ่นปูนสะสมและซึมซับคราบสารเคมี ทีมงานทำการสกัดผิวปูนที่เสียออก ปรับพื้นระดับโครงสร้างใหม่ด้วยระบบพียูชนิดหนาพิเศษ แข็งแรงทนทานยาวนาน</p>
-            </div>
-
-            <div class="space-y-4">
-                <div class="text-xs font-semibold text-slate-400 bg-slate-900 border border-white/5 px-3 py-1.5 rounded inline-block">Case Study 02: งานแก้ไขน้ำรั่วซึมชั้นดาดฟ้าสำนักงาน</div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="relative rounded overflow-hidden border border-white/5">
-                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop" alt="ดาดฟ้ารั่วซึมเป็นคราบตะไคร่น้ำ" class="w-full h-48 object-cover">
-                        <div class="absolute top-2 left-2 bg-red-600/90 text-white text-[10px] font-bold tracking-wider px-2 py-0.5 rounded">BEFORE</div>
-                    </div>
-                    <div class="relative rounded overflow-hidden border border-amber-500/20">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop" alt="ทาระบบกันซึมสวยงามเรียบร้อย" class="w-full h-48 object-cover">
-                        <div class="absolute top-2 left-2 bg-green-600/90 text-white text-[10px] font-bold tracking-wider px-2 py-0.5 rounded">AFTER</div>
-                    </div>
-                </div>
-                <p class="text-xs text-slate-400 font-light leading-relaxed">โครงสร้างดาดฟ้าเดิมมีรอยแยกขนาดใหญ่ทำให้น้ำขังซึมทะลุฝ้าเพดานภายในอาคาร ดำเนินการลอกชั้นคราบตะไคร่ ยิงโฟมโพลียูรีเทนประสานรอยแตก และลงระบบเมมเบรนกันซึมหนาทนรังสี UV</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="calculator" class="py-24 bg-slate-900 border-y border-white/5">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-5 space-y-6">
-                    <div class="inline-flex items-center space-x-2 bg-amber-500/10 text-amber-500 px-3 py-1 rounded text-xs font-semibold tracking-wider uppercase">
-                        Enterprise Financial Engine
-                    </div>
-                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">คำนวณความคุ้มค่าการลงทุนระบบโซลาร์เซลล์</h2>
-                    <p class="text-slate-400 text-sm font-light leading-relaxed">
-                        ระบบคำนวณขั้นสูงรองรับตั้งแต่ภาคครัวเรือนขนาดเล็กไปจนถึงโรงงานอุตสาหกรรมขนาดใหญ่ (ครอบคลุมค่าไฟฟ้าตั้งแต่ 500 บาท จนถึง 5,000,000 บาทต่อเดือน) เพื่อวิเคราะห์สัดส่วนขนาดกำลังการผลิตที่เหมาะสมที่สุดสำหรับคุณ
-                    </p>
-                    <div class="p-4 rounded bg-slate-950 border border-white/5 space-y-2">
-                        <span class="text-xs font-semibold text-slate-400 block"><i class="fa-solid fa-circle-info text-amber-500 mr-1"></i> เกณฑ์การวิเคราะห์เชิงวิศวกรรม</span>
-                        <p class="text-[11px] text-slate-500 leading-normal font-light">คำนวณบนฐานประสิทธิภาพแผงโซลาร์เซลล์ชนิด Monocrystalline ขนาด 550W+ และทำงานร่วมกับอินเวอร์เตอร์มาตรฐานอุตสาหกรรม (Tier 1) ที่ผ่านเกณฑ์การไฟฟ้านครหลวงและการไฟฟ้าส่วนภูมิภาค</p>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7 bg-slate-950 p-6 sm:p-8 rounded-xl border border-white/10 shadow-2xl">
-                    <div class="space-y-6">
-                        <div>
-                            <label for="monthly-bill" class="block text-sm font-medium text-slate-300 mb-2">ระบุค่าไฟฟ้าเฉลี่ยต่อเดือนในปัจจุบันของคุณ (บาท)</label>
-                            <div class="relative rounded shadow-sm">
-                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-500 font-medium">฿</div>
-                                <input type="number" id="monthly-bill" value="25000" min="500" max="5000000" class="block w-full pl-9 pr-24 py-3.5 bg-slate-900 border border-white/10 text-white font-bold rounded focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 font-mono text-xl" placeholder="กรอกยอดค่าไฟ">
-                                <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-xs text-slate-400 font-medium">บาท / เดือน</div>
-                            </div>
-                            <span class="text-[11px] text-slate-500 mt-1 block">*รองรับขอบเขตการคำนวณขั้นต่ำ 500 ถึงสูงสุด 5,000,000 บาท</span>
-                        </div>
-
-                        <button onclick="calculateAdvancedROI()" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-4 rounded transition-colors text-center text-sm shadow-md tracking-wider">
-                            <i class="fa-solid fa-calculator mr-2"></i>ประมวลผลขนาดระบบและระยะคืนทุน
-                        </button>
-
-                        <hr class="border-white/5">
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div class="bg-slate-900 p-4 rounded border border-white/5">
-                                <span class="text-xs text-slate-400 block font-light">ขนาดระบบกิโลวัตต์ที่แนะนำ</span>
-                                <span class="text-xl font-bold text-white font-mono" id="res-system">--</span>
-                            </div>
-                            <div class="bg-slate-900 p-4 rounded border border-white/5">
-                                <span class="text-xs text-slate-400 block font-light">ประมาณการจำนวนแผงโซลาร์</span>
-                                <span class="text-xl font-bold text-white font-mono" id="res-panels">--</span>
-                            </div>
-                            <div class="bg-slate-900 p-4 rounded border border-white/5">
-                                <span class="text-xs text-slate-400 block font-light">ช่วยลดภาระค่าไฟต่อเดือนโดยประมาณ</span>
-                                <span class="text-xl font-bold text-green-400 font-mono" id="res-monthly">--</span>
-                            </div>
-                            <div class="bg-slate-900 p-4 rounded border border-white/5">
-                                <span class="text-xs text-slate-400 block font-light">ช่วยประหยัดเงินต้นทุนพลังงานต่อปี</span>
-                                <span class="text-xl font-bold text-green-400 font-mono" id="res-yearly">--</span>
-                            </div>
-                            <div class="bg-slate-900 p-4 rounded border border-white/5 sm:col-span-2 flex justify-between items-center bg-gradient-to-r from-slate-900 to-amber-500/5">
-                                <div>
-                                    <span class="text-xs text-slate-400 block font-light">ระยะเวลาคุ้มทุนและคืนทุนโดยประมาณ</span>
-                                    <span class="text-2xl font-bold text-amber-500 font-mono" id="res-roi">--</span>
-                                </div>
-                                <i class="fa-solid fa-chart-line text-3xl text-amber-500/10 mr-2"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto space-y-4 mb-20">
-            <h2 class="text-xs font-bold text-amber-500 uppercase tracking-widest">Operation Pipeline</h2>
-            <p class="text-3xl sm:text-4xl font-bold tracking-tight text-white">6 ขั้นตอนการดำเนินงานที่ชัดเจน</p>
-            <div class="w-12 h-0.5 bg-amber-500 mx-auto rounded"></div>
-            <p class="text-slate-400 text-sm font-light">วางแผนแม่นยำ รายงานความคืบหน้าสม่ำเสมอ ส่งมอบงานตรงกำหนดเวลา</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 relative">
-            <div class="text-center space-y-2">
-                <div class="w-14 h-14 bg-slate-900 border border-white/10 rounded-full flex items-center justify-center mx-auto text-base font-bold text-amber-500 font-mono shadow">01</div>
-                <h3 class="text-xs font-bold text-white pt-2">สำรวจหน้างาน</h3>
-                <p class="text-[11px] text-slate-400 font-light leading-relaxed">เข้าตรวจสอบระนาบพื้น ระดับความชื้น หรือโครงหลังคาฟรี</p>
-            </div>
-            <div class="text-center space-y-2">
-                <div class="w-14 h-14 bg-slate-900 border border-white/10 rounded-full flex items-center justify-center mx-auto text-base font-bold text-white font-mono shadow">02</div>
-                <h3 class="text-xs font-bold text-white pt-2">ออกแบบจำลอง</h3>
-                <p class="text-[11px] text-slate-400 font-light leading-relaxed">ทำแบบแปลนรายละเอียดทางวิศวกรรมให้พิจารณาก่อนลงมือ</p>
-            </div>
-            <div class="text-center space-y-2">
-                <div class="w-14 h-14 bg-slate-900 border border-white/10 rounded-full flex items-center justify-center mx-auto text-base font-bold text-white font-mono shadow">03</div>
-                <h3 class="text-xs font-bold text-white pt-2">เสนอราคายุติธรรม</h3>
-                <p class="text-[11px] text-slate-400 font-light leading-relaxed">ออกใบเสนอราคาระบุวัสดุเกรดแบรนด์ชัดเจน ไร้บวกเพิ่มบานปลาย</p>
-            </div>
-            <div class="text-center space-y-2">
-                <div class="w-14 h-14 bg-slate-900 border border-white/10 rounded-full flex items-center justify-center mx-auto text-base font-bold text-white font-mono shadow">04</div>
-                <h3 class="text-xs font-bold text-white pt-2">เข้าหน้างานติดตั้ง</h3>
-                <p class="text-[11px] text-slate-400 font-light leading-relaxed">ปฏิบัติงานด้วยชุดช่างมืออาชีพพร้อมอุปกรณ์เซฟตี้ครบชุด</p>
-            </div>
-            <div class="text-center space-y-2">
-                <div class="w-14 h-14 bg-slate-900 border border-white/10 rounded-full flex items-center justify-center mx-auto text-base font-bold text-white font-mono shadow">05</div>
-                <h3 class="text-xs font-bold text-white pt-2">ตรวจสอบส่งมอบ</h3>
-                <p class="text-[11px] text-slate-400 font-light leading-relaxed">ทดสอบความเรียบแน่นของเหลว หรือทดสอบกำลังไฟร่วมกับลูกค้า</p>
-            </div>
-            <div class="text-center space-y-2">
-                <div class="w-14 h-14 bg-amber-500 text-slate-950 font-bold rounded-full flex items-center justify-center mx-auto text-base font-mono shadow-md">06</div>
-                <h3 class="text-xs font-bold text-amber-500 pt-2">ประกันคุณภาพ</h3>
-                <p class="text-[11px] text-slate-400 font-light leading-relaxed">เข้าดูแลตรวจสอบระบบตามวงรอบสัญญารับประกันผลงานจริง</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-gradient-to-r from-slate-900 to-slate-950 border-t border-white/5 text-center relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 relative z-10">
-            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">ให้โครงการของคุณขับเคลื่อนด้วยความถูกต้อง ปลอดภัย มั่นคง</h2>
-            <p class="text-slate-400 font-light max-w-lg mx-auto text-xs sm:text-sm">ยินดีให้คำปรึกษาปัญหาทางด้านเทคนิคพื้นโรงงานอุตสาหกรรม อาคารถูกกัดกร่อน หรือวางแผนลดรายจ่ายค่าไฟองค์กร</p>
-            <div class="pt-2">
-                <a href="tel:0952914565" class="inline-flex items-center justify-center space-x-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-8 py-4 rounded transition-transform transform hover:-translate-y-0.5 shadow-lg shadow-amber-500/20 text-base">
-                    <i class="fa-solid fa-phone-volume text-lg animate-pulse"></i>
-                    <span>โทรติดต่อสอบถาม: 095-291-4565</span>
-                </a>
-            </div>
-            <p class="text-[11px] text-slate-500 font-mono">ติดต่อ: คุณชาลิสา ฝ่ายประสานงานธุรการกลาง</p>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-white/5">
-        <div id="contact" class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-            
-            <div class="lg:col-span-6 space-y-8">
-                <div class="space-y-3">
-                    <h2 class="text-xs font-bold text-amber-500 uppercase tracking-widest">Corporate Information</h2>
-                    <h3 class="text-2xl font-bold text-white">บริษัท เอ็ม.ดี. เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด</h3>
-                    <p class="text-xs text-slate-400 font-light leading-relaxed">จดทะเบียนนิติบุคคลถูกต้องตามประมวลกฎหมายแพ่งและพาณิชย์ มุ่งเน้นการให้บริการจัดหา ออกแบบ และรับเหมาโครงสร้างสถาปัตยกรรมอุตสาหกรรมที่ได้มาตรฐานสากล</p>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs">
-                    <div class="flex items-start space-x-3">
-                        <div class="text-amber-500 text-lg mt-0.5"><i class="fa-solid fa-building-user"></i></div>
-                        <div>
-                            <span class="block font-bold text-white mb-0.5">ที่ตั้งสำนักงานใหญ่</span>
-                            <span class="text-slate-400 font-light leading-normal">133/456 ซอยสำนักงานที่ดินบางบัวทอง ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110</span>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-3">
-                        <div class="text-amber-500 text-lg mt-0.5"><i class="fa-solid fa-headset"></i></div>
-                        <div>
-                            <span class="block font-bold text-white mb-0.5">เจ้าหน้าที่ฝ่ายประสานงาน</span>
-                            <span class="text-slate-400 font-light">คุณชาลิสา</span>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-3">
-                        <div class="text-amber-500 text-lg mt-0.5"><i class="fa-solid fa-phone-flip"></i></div>
-                        <div>
-                            <span class="block font-bold text-white mb-0.5">โทรศัพท์สายตรง</span>
-                            <a href="tel:0952914565" class="text-amber-400 font-mono text-sm font-semibold hover:underline">095-291-4565</a>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-3">
-                        <div class="text-amber-500 text-lg mt-0.5"><i class="fa-solid fa-envelope-open"></i></div>
-                        <div>
-                            <span class="block font-bold text-white mb-0.5">อีเมลทางการองค์กร</span>
-                            <a href="mailto:mdengineeringandsupply@gmail.com" class="text-slate-300 font-mono hover:text-white break-all">mdengineeringandsupply@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-3 sm:col-span-2">
-                        <div class="text-amber-500 text-lg mt-0.5"><i class="fa-brands fa-facebook"></i></div>
-                        <div>
-                            <span class="block font-bold text-white mb-0.5">ช่องทางติดต่อโซเชียลมีเดียหลัก</span>
-                            <a href="https://www.facebook.com/mdengineerandsupply" target="_blank" class="text-slate-400 hover:text-amber-500 break-all font-light">facebook.com/mdengineerandsupply</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="lg:col-span-6 space-y-4">
-                <div class="flex justify-between items-center">
-                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wide"><i class="fa-solid fa-map-location-dot mr-1 text-amber-500"></i> แผนที่นำทางของบริษัท</span>
-                    <span class="text-[10px] text-slate-500 font-mono">13.916556, 100.432750</span>
-                </div>
-                
-                <a href="https://share.google/79bYKAek5da1VCosx" target="_blank" class="block group relative rounded-xl overflow-hidden border border-white/10 shadow-xl bg-slate-900 p-8 text-center transition-all hover:border-amber-500/40 hover:bg-slate-900/80">
-                    <div class="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-overlay transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://images.unsplash.com/photo-1524661135339-9140b00782EE?q=80&w=600&auto=format&fit=crop');"></div>
-                    
-                    <div class="relative z-10 py-8 space-y-4 max-w-sm mx-auto">
-                        <div class="w-16 h-16 bg-amber-500/10 text-amber-500 rounded-full flex items-center justify-center mx-auto text-2xl border border-amber-500/20 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all shadow-inner">
-                            <i class="fa-solid fa-diamond-turn-right"></i>
-                        </div>
-                        <div class="space-y-1">
-                            <h4 class="text-base font-bold text-white group-hover:text-amber-500 transition-colors">กดที่นี่เพื่อเปิดแผนที่ Google Maps</h4>
-                            <p class="text-xs text-slate-400 font-light leading-relaxed">คลิกเพื่อเปิดพิกัดนำทางไปยังสำนักงานใหญ่ ซอยสำนักงานที่ดินบางบัวทอง บนแอปพลิเคชันหรือเว็บบราวเซอร์ทันที</p>
-                        </div>
-                        <div class="inline-flex items-center space-x-2 text-xs font-semibold text-amber-400 bg-white/5 px-4 py-2 rounded border border-white/5 group-hover:bg-amber-500/10 transition-colors">
-                            <span>เปิดแผนที่นำทางระบบดาวเทียม</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="bg-slate-950 border-t border-white/5 py-8 text-center text-xs text-slate-500 font-light">
-        <div class="max-w-7xl mx-auto px-4 space-y-1">
-            <p>© 2026 MD Engineering & Supply Co., Ltd. สงวนลิขสิทธิ์ข้อมูลตามหลักกฎหมาย</p>
-            <p class="text-[10px] text-slate-600 font-mono">Production Deployment Gateway: md-eng-th.github.io</p>
-        </div>
-    </footer>
-
-    <div class="fixed bottom-6 right-6 z-40 flex flex-col space-y-3">
-        <button onclick="scrollToTop()" id="back-to-top" class="hidden w-11 h-11 bg-slate-900/90 border border-white/10 text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-slate-800 transition-all transform hover:-translate-y-0.5 backdrop-blur-md" aria-label="Back to Top">
-            <i class="fa-solid fa-arrow-up text-xs"></i>
-        </button>
-        <a href="https://www.facebook.com/mdengineerandsupply" target="_blank" class="w-12 h-12 bg-[#1877F2] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" aria-label="Facebook Link">
-            <i class="fa-brands fa-facebook-f text-base"></i>
-        </a>
-        <a href="https://line.me/ti/p/~mdengineering" target="_blank" class="w-12 h-12 bg-[#06C755] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" aria-label="Line Link">
-            <i class="fa-brands fa-line text-2xl"></i>
-        </a>
-        <a href="tel:0952914565" class="w-12 h-12 bg-amber-500 text-slate-950 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform font-bold" aria-label="Phone Call">
-            <i class="fa-solid fa-phone text-base"></i>
-        </a>
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="wrap">
+    <div class="fi">
+      <div class="sec-label">บริการทั้งหมด</div>
+      <h2 class="sec-h">งานวิศวกรรม<br>ครบวงจร</h2>
+      <p class="sec-p">ทีมวิศวกรผู้เชี่ยวชาญมากกว่า 15 ปี พร้อมให้บริการทั้งภาคอุตสาหกรรมและที่พักอาศัย</p>
     </div>
 
-    <div id="lightbox" class="fixed inset-0 z-50 bg-slate-950/95 hidden flex-col items-center justify-center p-4 backdrop-blur-md" onclick="closeLightbox()">
-        <button class="absolute top-6 right-6 text-white hover:text-amber-500 text-2xl focus:outline-none" onclick="closeLightbox()">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="max-w-4xl max-h-[80vh] overflow-hidden rounded border border-white/10 shadow-2xl bg-slate-900" onclick="event.stopPropagation()">
-            <img id="lightbox-img" src="" alt="Expanded Media View" class="w-full h-auto max-h-[80vh] object-contain">
-        </div>
-        <p id="lightbox-caption" class="text-xs text-slate-300 mt-4 font-medium text-center max-w-xl px-4"></p>
+    <div class="services-grid">
+
+      <div class="svc fi">
+        <div class="svc-icon i-solar">☀️</div>
+        <div class="svc-name">ติดตั้งโซล่าเซลล์</div>
+        <div class="svc-desc">ออกแบบ–ติดตั้งระบบโซล่าเซลล์ครบวงจร On-Grid / Off-Grid / Hybrid
+          รองรับนโยบายลดหย่อนภาษีรัฐ ดำเนินเรื่องการไฟฟ้าให้ครบทุกขั้นตอน</div>
+        <span class="svc-tag t-solar">Solar Energy</span>
+      </div>
+
+      <div class="svc fi">
+        <div class="svc-icon i-gold">🏗️</div>
+        <div class="svc-name">พื้น Epoxy &amp; PU</div>
+        <div class="svc-desc">รับเหมาทำพื้น Epoxy Self-Leveling, Epoxy Coating และ Polyurethane
+          สำหรับโรงงาน คลังสินค้า ห้องเย็น และสนามกีฬา มาตรฐานอุตสาหกรรม</div>
+        <span class="svc-tag t-gold">Epoxy Floor</span>
+      </div>
+
+      <div class="svc fi">
+        <div class="svc-icon i-teal">⚡</div>
+        <div class="svc-name">งานระบบไฟฟ้า</div>
+        <div class="svc-desc">ออกแบบ–ติดตั้งระบบไฟฟ้ากำลังและไฟฟ้าควบคุม ตู้ MDB, MCC, PLC
+          ทั้งงานก่อสร้างใหม่และปรับปรุงระบบเดิม</div>
+        <span class="svc-tag t-teal">Electrical</span>
+      </div>
+
+      <div class="svc fi">
+        <div class="svc-icon i-gold">💧</div>
+        <div class="svc-name">ระบบกันซึม</div>
+        <div class="svc-desc">งานกันซึมหลังคา พื้น ผนัง และโครงสร้างด้วยสาร Polyurethane
+          และ Epoxy ระดับอุตสาหกรรม อายุการใช้งานยาวนาน ไม่กะเทาะ ไม่ลอก</div>
+        <span class="svc-tag t-gold">Waterproofing</span>
+      </div>
+
+      <div class="svc fi">
+        <div class="svc-icon i-blue">🔩</div>
+        <div class="svc-name">Hi-Crete &amp; Floor Hardener</div>
+        <div class="svc-desc">ระบบ Hi-Crete MF และ Floor Hardener สำหรับพื้นโรงงานรับน้ำหนักหนัก
+          พื้นที่จราจรหนาแน่น ทนทานต่อแรงกระแทกและสารเคมี</div>
+        <span class="svc-tag t-teal">Hi-Crete</span>
+      </div>
+
+      <div class="svc fi">
+        <div class="svc-icon i-solar">🎯</div>
+        <div class="svc-name">ที่ปรึกษาพลังงาน</div>
+        <div class="svc-desc">สำรวจหน้างานฟรี วิเคราะห์ ROI คำนวณคืนทุน และช่วยดำเนินการ
+          เรื่องสิทธิ์ลดหย่อนภาษีกับกรมสรรพากรให้ครบทุกขั้นตอน</div>
+        <span class="svc-tag t-solar">Energy Consult</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS BAND ===== -->
+<div class="stats-band">
+  <div class="stats-grid">
+    <div class="fi"><div class="sb-num">40<span class="sb-unit">%</span></div><div class="sb-lbl">ประหยัดค่าไฟจากโซล่าเซลล์</div></div>
+    <div class="fi"><div class="sb-num">2–4<span class="sb-unit" style="font-size:1.2rem"> ปี</span></div><div class="sb-lbl">ระยะเวลาคืนทุน</div></div>
+    <div class="fi"><div class="sb-num">25<span class="sb-unit"> ปี</span></div><div class="sb-lbl">อายุแผงโซล่าเซลล์</div></div>
+    <div class="fi"><div class="sb-num">200K<span class="sb-unit" style="font-size:.95rem"> ฿</span></div><div class="sb-lbl">ลดหย่อนภาษีจากรัฐ</div></div>
+  </div>
+</div>
+
+<!-- ===== PROCESS ===== -->
+<section id="process">
+  <div class="wrap">
+    <div class="fi">
+      <div class="sec-label">ขั้นตอนการทำงาน</div>
+      <h2 class="sec-h">กระบวนการที่<br>เป็นระบบ</h2>
+    </div>
+    <div class="proc-row">
+      <div class="fi">
+        <ul class="proc-list">
+          <li class="proc-item">
+            <div class="proc-num">01</div>
+            <div class="proc-text">
+              <h4>สำรวจและประเมินหน้างาน</h4>
+              <p>ทีมวิศวกรเข้าสำรวจพื้นที่ฟรี วิเคราะห์ความเหมาะสม นำเสนอแผนงานและความเป็นไปได้</p>
+            </div>
+          </li>
+          <li class="proc-item">
+            <div class="proc-num">02</div>
+            <div class="proc-text">
+              <h4>ออกแบบและเสนอราคา</h4>
+              <p>ออกแบบระบบเฉพาะสำหรับโปรเจคของท่าน พร้อมใบเสนอราคาโปร่งใส ไม่มีค่าใช้จ่ายซ่อนเร้น</p>
+            </div>
+          </li>
+          <li class="proc-item">
+            <div class="proc-num">03</div>
+            <div class="proc-text">
+              <h4>ดำเนินการติดตั้ง</h4>
+              <p>ทีมช่างผู้เชี่ยวชาญควบคุมการติดตั้งตามมาตรฐาน ตรวจสอบคุณภาพทุกขั้นตอน</p>
+            </div>
+          </li>
+          <li class="proc-item">
+            <div class="proc-num">04</div>
+            <div class="proc-text">
+              <h4>ส่งมอบและรับประกัน</h4>
+              <p>ส่งมอบงานพร้อมเอกสารครบถ้วน รับประกันผลงาน และบริการหลังการขายตลอดอายุการใช้งาน</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="orbit-wrap fi">
+        <div class="orbit o1"></div>
+        <div class="orbit o2"></div>
+        <div class="orbit-core">☀️</div>
+        <div class="orbit-tag ot1">💡 ลดค่าไฟ 40%</div>
+        <div class="orbit-tag ot2">🌱 Zero Carbon</div>
+        <div class="orbit-tag ot3">💰 ลดหย่อนภาษี</div>
+        <div class="orbit-tag ot4">🔋 กักเก็บพลังงาน</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" style="background:linear-gradient(180deg,transparent,rgba(13,20,40,.55))">
+  <div class="wrap">
+    <div class="fi">
+      <div class="sec-label">ติดต่อเรา</div>
+      <h2 class="sec-h">พร้อมให้บริการ<br>ทุกวัน</h2>
+      <p class="sec-p">สำรวจหน้างานฟรี ไม่มีค่าใช้จ่าย โทรหาเราหรือสแกน QR Code ได้เลย</p>
     </div>
 
-    <script>
-        // Hamburger Menu Toggle Subsystem
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+    <div class="contact-grid">
 
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
+      <!-- Info -->
+      <div class="info-card fi">
+        <h3>📍 ข้อมูลติดต่อ</h3>
+        <div class="ci">
+          <div class="ci-icon">📞</div>
+          <div>
+            <div class="ci-lbl">เบอร์โทรศัพท์</div>
+            <div class="ci-val"><a href="tel:0952914565">095-291-4565</a></div>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon">📧</div>
+          <div>
+            <div class="ci-lbl">อีเมล</div>
+            <div class="ci-val">mdengineeringandsupply@gmail.com</div>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon">🌐</div>
+          <div>
+            <div class="ci-lbl">เว็บไซต์</div>
+            <div class="ci-val">www.mdengineer.com</div>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon">📘</div>
+          <div>
+            <div class="ci-lbl">Facebook</div>
+            <div class="ci-val">
+              <a href="https://www.facebook.com/share/18ZkQPQDb1/" target="_blank" style="font-size:.9rem">
+                MD Engineering and Supply
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon">⏰</div>
+          <div>
+            <div class="ci-lbl">เวลาทำการ</div>
+            <div class="ci-val">จันทร์–เสาร์ &nbsp; 08:00 – 17:30 น.</div>
+          </div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon">🏢</div>
+          <div>
+            <div class="ci-lbl">ที่อยู่</div>
+            <div class="ci-val">133/456 ซอยสำนักงานที่ดินบางบัวทอง<br>ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110</div>
+          </div>
+        </div>
+      </div>
 
-        // Header Transformation Scroll Axis Tracking
-        const header = document.getElementById('main-header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 40) {
-                header.classList.add('bg-slate-950/95', 'h-16');
-                header.classList.remove('bg-slate-950/70', 'h-20');
-            } else {
-                header.classList.add('bg-slate-950/70', 'h-20');
-                header.classList.remove('bg-slate-950/95', 'h-16');
-            }
+      <!-- LINE / QR -->
+      <div class="line-card fi">
+        <div class="line-emo">💬</div>
+        <div class="line-title">LINE &amp; โทรศัพท์</div>
+        <div class="line-sub">แสกน QR หรือกดโทรหาเราได้เลย</div>
+        <div class="qr-wrap">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=164x164&data=tel%3A0952914565&color=003520&bgcolor=ffffff&qzone=1&margin=4"
+            alt="QR Code โทร 0952914565"
+            loading="lazy"
+          >
+        </div>
+        <div class="line-phone">095-291-4565</div>
+        <div class="line-phone-lbl">โทร / LINE</div>
+        <div class="line-note">
+          <p>📲 กดโทร หรือสแกน QR Code<br>รับสำรวจหน้างานฟรี ไม่มีค่าใช้จ่าย<br>ใบเสนอราคาภายใน 24 ชั่วโมง</p>
+        </div>
+      </div>
 
-            const btt = document.getElementById('back-to-top');
-            if (window.scrollY > 400) {
-                btt.classList.remove('hidden');
-                btt.classList.add('flex');
-            } else {
-                btt.classList.add('hidden');
-                btt.classList.remove('flex');
-            }
-        });
+    </div>
 
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+    <!-- Map -->
+    <div class="fi">
+      <div class="addr-wrap">
+        <div class="addr-icon">📍</div>
+        <div class="addr-text">
+          <h3>สำนักงานใหญ่ · MD Engineering and Supply</h3>
+          <p>
+            133/456 ซอยสำนักงานที่ดินบางบัวทอง ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110<br>
+            <span style="color:var(--teal2);font-size:.83rem;">ใกล้สำนักงานที่ดินบางบัวทอง · ทางหลวงนนทบุรี-สุพรรณบุรี</span>
+          </p>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://maps.google.com/maps?q=13.906,100.423&z=15&output=embed"
+          loading="lazy"
+          title="ที่ตั้ง MD Engineering and Supply บางบัวทอง นนทบุรี"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
 
-        // Lightbox Expansion Core Handler
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxCaption = document.getElementById('lightbox-caption');
+  </div>
+</section>
 
-        function openLightbox(element) {
-            const img = element.querySelector('img');
-            const heading = element.querySelector('h4');
-            if (img) {
-                lightboxImg.src = img.src;
-                lightboxCaption.innerText = heading ? heading.innerText : "";
-                lightbox.classList.remove('hidden');
-                lightbox.classList.add('flex');
-                document.body.classList.add('overflow-hidden');
-            }
-        }
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-brand">MD Engineering &amp; Supply</div>
+  <div class="footer-th">บจก. เอ็ม.ดี. เอ็นจิเนียริ่ง แอนด์ ซัพพลาย</div>
+  <div class="footer-info">
+    133/456 ซอยสำนักงานที่ดินบางบัวทอง ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110<br>
+    📞 095-291-4565 &nbsp;·&nbsp; ✉️ mdengineeringandsupply@gmail.com &nbsp;·&nbsp; 🌐 www.mdengineer.com
+  </div>
+  <div class="footer-links">
+    <a href="https://www.facebook.com/share/18ZkQPQDb1/" target="_blank" class="fl-fb">📘 Facebook</a>
+    <a href="tel:0952914565" class="fl-tel">📞 095-291-4565</a>
+  </div>
+  <p class="footer-copy">© 2024–2025 MD Engineering and Supply Co., Ltd. · All rights reserved.</p>
+</footer>
 
-        function closeLightbox() {
-            lightbox.classList.add('hidden');
-            lightbox.classList.remove('flex');
-            document.body.classList.remove('overflow-hidden');
-        }
+<script>
+  // ── scroll fade-in ──────────────────────────────────
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('vis');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
 
-        // Advanced Solar ROI Calculator supporting 500 to 5,000,000 THB Scale
-        function calculateAdvancedROI() {
-            const billInput = document.getElementById('monthly-bill');
-            let bill = parseFloat(billInput.value);
+  // stagger siblings in grids
+  document.querySelectorAll('.services-grid, .policy-cards, .stats-grid').forEach(grid => {
+    grid.querySelectorAll('.fi').forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.1}s`;
+    });
+  });
 
-            // Error validation tracking requirements limit checks boundary bounds
-            if (isNaN(bill) || bill < 500) {
-                alert('ระบบรองรับการคำนวณขั้นต่ำตั้งแต่ 500 บาทขึ้นไป กรุณาระบุข้อมูลตัวเลขใหม่อีกครั้ง');
-                billInput.value = 500;
-                bill = 500;
-            }
-            if (bill > 5000000) {
-                alert('ระบบคำนวณจำกัดสเกลสูงสุดโครงสร้างขนาดใหญ่ไม่เกิน 5,000,000 บาท กรุณาระบุข้อมูลใหม่อีกครั้ง');
-                billInput.value = 5000000;
-                bill = 5000000;
-            }
+  document.querySelectorAll('.fi').forEach(el => io.observe(el));
+</script>
 
-            // High Precision Engineering Multi-tier Scaler Model
-            let systemSizeKw = 0;
-            let efficiencyRatio = 0.40; // Base target saving efficiency factor
-            let averagePricePerKw = 40000; // Average execution investment baseline factor cost per kW
-
-            if (bill <= 3000) {
-                systemSizeKw = (bill / 4.2) / 120; // Household mini scaling configuration
-                efficiencyRatio = 0.32;
-                averagePricePerKw = 45000;
-            } else if (bill <= 15000) {
-                systemSizeKw = (bill / 4.2) / 125; // Small business grid structure configurations
-                efficiencyRatio = 0.38;
-                averagePricePerKw = 41000;
-            } else if (bill <= 100000) {
-                systemSizeKw = (bill / 4.2) / 130; // Medium factory facility configurations
-                efficiencyRatio = 0.42;
-                averagePricePerKw = 36000;
-            } else if (bill <= 1000000) {
-                systemSizeKw = (bill / 4.2) / 135; // Large scale manufacturing site configurations
-                efficiencyRatio = 0.44;
-                averagePricePerKw = 32000;
-            } else {
-                systemSizeKw = (bill / 4.2) / 138; // Megawatt heavy industrial platform configurations
-                efficiencyRatio = 0.46;
-                averagePricePerKw = 28000;
-            }
-
-            // Real panel calculations using heavy industrial 550 Watt panels metrics parameter
-            let panelsNeeded = Math.ceil((systemSizeKw * 1000) / 550);
-            
-            // Adjust calculation anomalies bounds for minimum values
-            if (systemSizeKw < 1.5) systemSizeKw = 1.5;
-            if (panelsNeeded < 3) panelsNeeded = 3;
-
-            let monthlySavings = bill * efficiencyRatio;
-            let yearlySavings = monthlySavings * 12;
-            let estimatedInvestment = systemSizeKw * averagePricePerKw;
-            let paybackPeriodYears = estimatedInvestment / yearlySavings;
-
-            // Restrict logical boundary variances based on historical industry installations parameters data
-            if (paybackPeriodYears < 3.8) paybackPeriodYears = 3.8;
-            if (paybackPeriodYears > 5.5) paybackPeriodYears = 5.3;
-
-            // Inject metrics formatted strings data down inside DOM structural text
-            document.getElementById('res-system').innerText = systemSizeKw.toFixed(2) + ' kWp';
-            document.getElementById('res-panels').innerText = panelsNeeded.toLocaleString() + ' แผง (ขนาด 550W)';
-            document.getElementById('res-monthly').innerText = '≈ ' + Math.round(monthlySavings).toLocaleString() + ' บาท';
-            document.getElementById('res-yearly').innerText = '≈ ' + Math.round(yearlySavings).toLocaleString() + ' บาท';
-            document.getElementById('res-roi').innerText = '≈ ' + paybackPeriodYears.toFixed(1) + ' ปี คืนทุนเร็ว';
-        }
-
-        // Fire initialization event automatically
-        window.addEventListener('DOMContentLoaded', () => {
-            calculateAdvancedROI();
-        });
-    </script>
 </body>
 </html>
