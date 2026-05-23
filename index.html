@@ -3,911 +3,815 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MD Engineering and Supply Co., Ltd. | วิศวกรรมครบวงจร · โซล่าเซลล์ · พื้น Epoxy</title>
+<title>MD Engineering & Supply | Solar Rooftop, Epoxy Floor, Waterproofing</title>
+<meta name="description" content="ติดตั้ง Solar Rooftop, Epoxy Floor, PU Flooring และระบบกันซึมครบวงจร โดยทีมวิศวกรผู้เชี่ยวชาญ สำรวจฟรี ออกใบเสนอราคาใน 24 ชั่วโมง">
+<meta name="keywords" content="Solar Rooftop, Epoxy Floor, PU Flooring, Waterproofing, CCTV, Cleanroom, ระบบไฟฟ้า, รับเหมาก่อสร้าง, นนทบุรี, บางบัวทอง">
+<meta name="author" content="MD Engineering & Supply Co., Ltd.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="MD Engineering & Supply | วิศวกรรมครบวงจร">
+<meta property="og:description" content="ผู้เชี่ยวชาญด้าน Solar Rooftop, Epoxy Floor, Waterproofing และระบบวิศวกรรมครบวงจร สำรวจฟรี เสนอราคาใน 24 ชม.">
+<meta property="og:url" content="https://md-eng-th.github.io/MD-Eng.co.th/">
+<meta property="og:locale" content="th_TH">
+
+<link rel="canonical" href="https://md-eng-th.github.io/MD-Eng.co.th/">
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Sarabun:wght@200;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&family=Sarabun:wght@400;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "MD Engineering & Supply Co., Ltd.",
+  "alternateName": "บริษัท เอ็ม.ดี. เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด",
+  "telephone": "+66952914565",
+  "email": "mdengineeringandsupply@gmail.com",
+  "url": "https://md-eng-th.github.io/MD-Eng.co.th/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "133/456 ซอยสำนักงานที่ดินบางบัวทอง ต.พิมลราช",
+    "addressLocality": "บางบัวทอง",
+    "addressRegion": "นนทบุรี",
+    "postalCode": "11110",
+    "addressCountry": "TH"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 13.916556, "longitude": 100.432750 },
+  "areaServed": "TH",
+  "priceRange": "$$"
+}
+</script>
+
 <style>
-:root {
-  --navy:  #060b18;
-  --navy2: #0d1428;
-  --navy3: #141c38;
-  --gold:  #e8a12a;
-  --gold2: #f5c765;
-  --solar: #ff7b35;
-  --solar2:#ffb347;
-  --teal:  #2dd4bf;
-  --teal2: #5eead4;
-  --green: #4ade80;
-  --text:  #edf2ff;
-  --muted: #8892b0;
-  --card:  rgba(18,26,54,0.88);
+:root{
+  --navy:#0F172A;
+  --black:#111827;
+  --slate:#1E293B;
+  --amber:#F59E0B;
+  --amber-soft:#FBBF24;
+  --white:#FFFFFF;
+  --gray:#94A3B8;
+  --gray-d:#64748B;
+  --line:rgba(255,255,255,.08);
+  --card:rgba(255,255,255,.03);
+  --radius:18px;
+  --maxw:1240px;
+  --font-body:'Anuphan',sans-serif;
+  --font-head:'Sarabun',sans-serif;
+  --font-num:'Space Grotesk',sans-serif;
 }
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{
+  font-family:var(--font-body);
   background:var(--navy);
-  color:var(--text);
-  font-family:'Kanit','Sarabun',sans-serif;
-  font-weight:300;
+  color:var(--white);
+  line-height:1.65;
   overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
 }
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+section{position:relative}
+h1,h2,h3{font-family:var(--font-head);line-height:1.2;font-weight:800;letter-spacing:-.01em}
+.amber{color:var(--amber)}
 
-/* ── BACKGROUND ─────────────────────────────────────── */
-.bg-wrap{
-  position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;
-}
-.bg-wrap::before{
-  content:'';position:absolute;inset:0;
-  background:
-    radial-gradient(ellipse 80% 50% at 10% 15%, rgba(255,123,53,.09) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 45% at 90% 75%, rgba(45,212,191,.06) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 60% at 50% 45%, rgba(232,161,42,.04) 0%, transparent 65%);
-}
-.grid{
-  position:absolute;inset:0;
-  background-image:
-    linear-gradient(rgba(232,161,42,.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(232,161,42,.04) 1px, transparent 1px);
-  background-size:64px 64px;
-  animation:gridMove 25s linear infinite;
-}
-@keyframes gridMove{to{background-position:0 64px;}}
+/* atmosphere */
+.glow{position:absolute;border-radius:50%;filter:blur(120px);opacity:.5;pointer-events:none;z-index:0}
 
-/* ── NAV ─────────────────────────────────────────────── */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  padding:.9rem 2.5rem;
+/* ===== NAV ===== */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
   display:flex;align-items:center;justify-content:space-between;
-  background:rgba(6,11,24,.88);
-  backdrop-filter:blur(22px);
-  border-bottom:1px solid rgba(232,161,42,.10);
+  padding:16px 24px;
+  background:rgba(15,23,42,.55);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid transparent;
+  transition:.4s;
 }
-.nav-brand{
-  font-size:1rem;font-weight:700;color:var(--gold);letter-spacing:.04em;
+.nav.scrolled{background:rgba(15,23,42,.92);border-bottom:1px solid var(--line);padding:11px 24px}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--font-head);font-weight:800;font-size:1.15rem}
+.brand .mark{
+  width:42px;height:42px;border-radius:11px;
+  background:linear-gradient(135deg,var(--amber),#B45309);
+  display:grid;place-items:center;color:var(--navy);font-family:var(--font-num);font-weight:700;font-size:1.05rem;
+  box-shadow:0 6px 22px rgba(245,158,11,.4);
 }
-.nav-brand span{color:var(--text);font-weight:300;}
-.nav-links{display:flex;gap:2rem;list-style:none;}
-.nav-links a{font-size:.78rem;color:var(--muted);text-decoration:none;letter-spacing:.12em;transition:color .2s;}
-.nav-links a:hover{color:var(--gold);}
-.nav-cta{
-  background:rgba(232,161,42,.14);border:1px solid rgba(232,161,42,.32);
-  color:var(--gold2)!important;padding:.35rem 1.2rem;border-radius:100px;
-  transition:background .2s!important;
+.brand small{display:block;font-size:.62rem;color:var(--gray);font-weight:400;font-family:var(--font-body);letter-spacing:.04em}
+.menu{display:flex;align-items:center;gap:34px}
+.menu a{font-size:.94rem;color:var(--gray);font-weight:500;transition:.25s;position:relative}
+.menu a::after{content:'';position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--amber);transition:.3s}
+.menu a:hover{color:var(--white)}
+.menu a:hover::after{width:100%}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 22px;border-radius:50px;font-weight:600;font-size:.92rem;
+  cursor:pointer;border:none;transition:.3s;font-family:var(--font-body);
 }
-.nav-cta:hover{background:rgba(232,161,42,.26)!important;}
-@media(max-width:768px){.nav-links{display:none;}}
+.btn-amber{background:linear-gradient(135deg,var(--amber),#D97706);color:var(--navy);box-shadow:0 8px 24px rgba(245,158,11,.35)}
+.btn-amber:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(245,158,11,.5)}
+.btn-ghost{background:rgba(255,255,255,.06);color:var(--white);border:1px solid var(--line)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:var(--amber)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px}
+.hamburger span{width:26px;height:2px;background:var(--white);transition:.3s;border-radius:2px}
 
-/* ── TICKER ──────────────────────────────────────────── */
-.ticker-bar{
-  margin-top:60px;
-  background:linear-gradient(90deg, rgba(255,123,53,.09), rgba(232,161,42,.13), rgba(255,123,53,.09));
-  border-bottom:1px solid rgba(255,123,53,.18);
-  padding:.7rem 0;overflow:hidden;
-  font-size:.82rem;color:var(--solar2);letter-spacing:.07em;
-  position:relative;z-index:1;
-}
-.ticker-inner{
-  display:inline-block;white-space:nowrap;
-  animation:ticker 28s linear infinite;
-}
-@keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
-
-/* ── HERO ────────────────────────────────────────────── */
+/* ===== HERO ===== */
 .hero{
-  position:relative;z-index:1;
-  min-height:100vh;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  text-align:center;padding:4rem 2rem 6rem;
-  overflow:hidden;
+  min-height:100vh;display:flex;align-items:center;
+  padding:120px 0 80px;overflow:hidden;
 }
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.28}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,42,.7) 0%,rgba(15,23,42,.85) 60%,var(--navy) 100%)}
+.hero .wrap{position:relative;z-index:2;max-width:920px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:8px 16px;border-radius:50px;
+  background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3);
+  color:var(--amber-soft);font-size:.82rem;font-weight:600;margin-bottom:26px;letter-spacing:.02em;
+}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(245,158,11,.6)}50%{opacity:.7;box-shadow:0 0 0 7px rgba(245,158,11,0)}}
+.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);margin-bottom:24px;letter-spacing:-.02em}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line span{display:block;animation:rise .9s cubic-bezier(.22,1,.36,1) backwards}
+@keyframes rise{from{transform:translateY(110%)}to{transform:translateY(0)}}
+.hero .sub{font-size:clamp(1.05rem,2.2vw,1.32rem);color:var(--gray);max-width:640px;margin-bottom:38px;font-weight:400;animation:fade 1s ease .6s backwards}
+.hero .sub b{color:var(--white);font-weight:600}
+@keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;animation:fade 1s ease .8s backwards}
+.btn-lg{padding:16px 30px;font-size:1rem}
+.btn-line{background:#06C755;color:#fff}
+.btn-line:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(6,199,85,.4)}
+.scroll-ind{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:3;color:var(--gray-d);font-size:.78rem;display:flex;flex-direction:column;align-items:center;gap:8px;animation:fade 1s ease 1.4s backwards}
+.scroll-ind .mouse{width:24px;height:38px;border:2px solid var(--gray-d);border-radius:14px;position:relative}
+.scroll-ind .mouse::after{content:'';position:absolute;top:7px;left:50%;transform:translateX(-50%);width:4px;height:7px;background:var(--amber);border-radius:2px;animation:wheel 1.6s infinite}
+@keyframes wheel{0%{opacity:1;top:7px}100%{opacity:0;top:18px}}
 
-/* animated sun rings */
-.ring{
-  position:absolute;top:50%;left:50%;
-  border-radius:50%;
-  transform:translate(-50%,-50%);
-  animation:ringPulse 5s ease-in-out infinite;
-  pointer-events:none;
-}
-.ring-1{width:640px;height:640px;border:1px solid rgba(255,123,53,.10);animation-delay:0s;}
-.ring-2{width:460px;height:460px;border:1px solid rgba(232,161,42,.14);animation-delay:-1.6s;}
-.ring-3{width:300px;height:300px;border:1px solid rgba(255,123,53,.20);animation-delay:-3.2s;}
-@keyframes ringPulse{
-  0%,100%{opacity:.5;transform:translate(-50%,-50%) scale(1);}
-  50%{opacity:1;transform:translate(-50%,-50%) scale(1.05);}
-}
+/* ===== SECTION HEADERS ===== */
+.sec{padding:100px 0}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 60px}
+.sec-tag{color:var(--amber);font-weight:700;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px;font-family:var(--font-num)}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:16px}
+.sec-head p{color:var(--gray);font-size:1.05rem}
 
-/* sun rays */
-.rays-wrap{
-  position:absolute;top:50%;left:50%;width:700px;height:700px;
-  transform:translate(-50%,-50%);
-  animation:rayRot 45s linear infinite;pointer-events:none;
-}
-.ray{
-  position:absolute;top:50%;left:50%;
-  width:1px;height:290px;
-  transform-origin:bottom center;
-  background:linear-gradient(to top, rgba(255,175,50,.11), transparent);
-}
-.ray:nth-child(1){transform:translateX(-50%) rotate(0deg)}
-.ray:nth-child(2){transform:translateX(-50%) rotate(15deg)}
-.ray:nth-child(3){transform:translateX(-50%) rotate(30deg)}
-.ray:nth-child(4){transform:translateX(-50%) rotate(45deg)}
-.ray:nth-child(5){transform:translateX(-50%) rotate(60deg)}
-.ray:nth-child(6){transform:translateX(-50%) rotate(75deg)}
-.ray:nth-child(7){transform:translateX(-50%) rotate(90deg)}
-.ray:nth-child(8){transform:translateX(-50%) rotate(105deg)}
-.ray:nth-child(9){transform:translateX(-50%) rotate(120deg)}
-.ray:nth-child(10){transform:translateX(-50%) rotate(135deg)}
-.ray:nth-child(11){transform:translateX(-50%) rotate(150deg)}
-.ray:nth-child(12){transform:translateX(-50%) rotate(165deg)}
-.ray:nth-child(13){transform:translateX(-50%) rotate(180deg)}
-.ray:nth-child(14){transform:translateX(-50%) rotate(195deg)}
-.ray:nth-child(15){transform:translateX(-50%) rotate(210deg)}
-.ray:nth-child(16){transform:translateX(-50%) rotate(225deg)}
-.ray:nth-child(17){transform:translateX(-50%) rotate(240deg)}
-.ray:nth-child(18){transform:translateX(-50%) rotate(255deg)}
-.ray:nth-child(19){transform:translateX(-50%) rotate(270deg)}
-.ray:nth-child(20){transform:translateX(-50%) rotate(285deg)}
-.ray:nth-child(21){transform:translateX(-50%) rotate(300deg)}
-.ray:nth-child(22){transform:translateX(-50%) rotate(315deg)}
-.ray:nth-child(23){transform:translateX(-50%) rotate(330deg)}
-.ray:nth-child(24){transform:translateX(-50%) rotate(345deg)}
-@keyframes rayRot{from{transform:translate(-50%,-50%) rotate(0deg);}to{transform:translate(-50%,-50%) rotate(360deg);}}
+/* ===== TRUST / STATS ===== */
+.stats{background:var(--black);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.stat{text-align:center;padding:20px;position:relative}
+.stat:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;height:60%;width:1px;background:var(--line)}
+.stat .num{font-family:var(--font-num);font-size:clamp(2.4rem,5vw,3.4rem);font-weight:700;color:var(--amber);line-height:1}
+.stat .lbl{color:var(--gray);font-size:.96rem;margin-top:10px}
 
-.hero-inner{position:relative;z-index:2;}
-.badge{
-  display:inline-flex;align-items:center;gap:.55rem;
-  background:rgba(232,161,42,.11);border:1px solid rgba(232,161,42,.32);
-  border-radius:100px;padding:.45rem 1.4rem;
-  font-size:.72rem;letter-spacing:.2em;color:var(--gold2);text-transform:uppercase;
-  margin-bottom:2rem;animation:fadeUp .7s ease both;
+/* ===== PROJECTS / GALLERY ===== */
+.gallery{columns:3;column-gap:18px}
+.gitem{
+  break-inside:avoid;margin-bottom:18px;border-radius:var(--radius);overflow:hidden;
+  position:relative;cursor:pointer;border:1px solid var(--line);background:var(--slate);
 }
-.badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold);}
-.hero-title{
-  font-size:clamp(3rem,7.5vw,6.5rem);font-weight:800;
-  line-height:.95;letter-spacing:-.02em;
-  animation:fadeUp .7s ease .2s both;
+.gitem img{width:100%;transition:.6s cubic-bezier(.22,1,.36,1);display:block}
+.gitem:hover img{transform:scale(1.07)}
+.gitem .ov{
+  position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(15,23,42,.92));
+  display:flex;flex-direction:column;justify-content:flex-end;padding:22px;opacity:0;transition:.4s;
 }
-.grad{
-  background:linear-gradient(135deg, var(--gold), var(--solar), var(--gold2));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
-.hero-en{
-  font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;
-  font-size:clamp(1.1rem,2.5vw,1.65rem);color:var(--muted);
-  margin-top:.6rem;letter-spacing:.05em;
-  animation:fadeUp .7s ease .35s both;
-}
-.hero-tag{
-  font-size:clamp(.88rem,1.8vw,1.1rem);font-weight:400;color:var(--teal2);
-  margin-top:1.6rem;letter-spacing:.04em;
-  animation:fadeUp .7s ease .5s both;
-}
-.hero-divider{
-  width:80px;height:2px;
-  background:linear-gradient(90deg, transparent, var(--gold), transparent);
-  margin:2rem auto;animation:fadeUp .7s ease .6s both;
-}
-.hero-kpi{
-  display:flex;gap:3rem;justify-content:center;flex-wrap:wrap;
-  animation:fadeUp .7s ease .7s both;
-}
-.kpi-num{font-size:2.4rem;font-weight:800;background:linear-gradient(135deg,var(--gold),var(--solar2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.kpi-lbl{font-size:.72rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:.2rem;}
-.scroll-hint{
-  position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);
-  display:flex;flex-direction:column;align-items:center;gap:.4rem;
-  font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--muted);opacity:.5;animation:bounce 2.5s ease-in-out infinite;
-}
-.scroll-hint div{width:14px;height:14px;border-right:1px solid var(--muted);border-bottom:1px solid var(--muted);transform:rotate(45deg);}
-@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(9px);}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+.gitem:hover .ov{opacity:1}
+.gitem .ov .cat{color:var(--amber);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.gitem .ov .t{font-family:var(--font-head);font-weight:700;font-size:1.1rem;margin-top:4px}
+.gitem .badge{position:absolute;top:14px;left:14px;background:rgba(15,23,42,.8);backdrop-filter:blur(8px);padding:6px 13px;border-radius:30px;font-size:.74rem;font-weight:600;color:var(--amber-soft);border:1px solid rgba(245,158,11,.3)}
 
-/* ── SECTION COMMON ──────────────────────────────────── */
-section{position:relative;z-index:1;padding:5.5rem 2rem;}
-.wrap{max-width:1200px;margin:0 auto;}
-.sec-label{
-  font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;
-  color:var(--gold);margin-bottom:.9rem;
-  display:flex;align-items:center;gap:.9rem;
-}
-.sec-label::before{content:'';width:28px;height:1px;background:var(--gold);}
-.sec-h{font-size:clamp(1.9rem,4vw,3rem);font-weight:700;line-height:1.1;margin-bottom:1.3rem;}
-.sec-p{font-size:.97rem;color:var(--muted);line-height:1.85;max-width:580px;}
-
-/* fade-in scroll */
-.fi{opacity:0;transform:translateY(38px);transition:opacity .7s ease,transform .7s ease;}
-.fi.vis{opacity:1;transform:translateY(0);}
-
-/* ── SOLAR POLICY BANNER ─────────────────────────────── */
-.solar-banner{
-  background:linear-gradient(135deg,#180600,#280a00,#180500);
-  border:1px solid rgba(255,123,53,.28);
-  border-radius:22px;padding:3rem 3.5rem;
-  position:relative;overflow:hidden;
-  box-shadow:0 0 60px rgba(255,123,53,.14), inset 0 1px 0 rgba(255,175,50,.18);
-}
-.solar-banner::before{
-  content:'';position:absolute;top:-40%;right:-8%;
-  width:520px;height:520px;
-  background:radial-gradient(circle, rgba(255,123,53,.12) 0%, transparent 65%);
-  pointer-events:none;
-}
-.solar-grid{
-  display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:center;
-  position:relative;z-index:1;
-}
-.solar-mini-badge{
-  display:inline-flex;align-items:center;gap:.45rem;
-  background:rgba(255,123,53,.18);border:1px solid rgba(255,123,53,.38);
-  border-radius:100px;padding:.28rem .95rem;
-  font-size:.68rem;color:var(--solar2);letter-spacing:.15em;text-transform:uppercase;
-  margin-bottom:.9rem;
-}
-.solar-h{font-size:clamp(1.5rem,3vw,2.4rem);font-weight:700;line-height:1.2;}
-.solar-h span{color:var(--solar);}
-.solar-desc{font-size:.92rem;color:#c9a890;margin-top:.8rem;line-height:1.75;}
-.tax-pill{
-  background:linear-gradient(135deg,rgba(255,123,53,.22),rgba(255,175,50,.18));
-  border:2px solid rgba(255,123,53,.48);
-  border-radius:18px;padding:1.6rem 2.2rem;
-  text-align:center;min-width:195px;
-  box-shadow:0 0 35px rgba(255,123,53,.22);
-}
-.tax-lbl{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--solar2);margin-bottom:.4rem;}
-.tax-num{
-  font-size:2.6rem;font-weight:800;color:var(--solar);line-height:1;
-  text-shadow:0 0 24px rgba(255,123,53,.6);
-}
-.tax-sub{font-size:.78rem;color:var(--solar2);margin-top:.3rem;}
-.policy-cards{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2rem;
-  position:relative;z-index:1;
-}
-.pc{
-  background:rgba(255,123,53,.06);
-  border:1px solid rgba(255,123,53,.18);
-  border-radius:14px;padding:1.4rem;text-align:center;
-  transition:transform .3s,box-shadow .3s;
-}
-.pc:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(255,123,53,.15);}
-.pc-icon{font-size:1.9rem;margin-bottom:.7rem;}
-.pc h4{font-size:.88rem;font-weight:600;color:var(--solar2);margin-bottom:.35rem;}
-.pc p{font-size:.76rem;color:var(--muted);line-height:1.65;}
-@media(max-width:768px){
-  .solar-grid{grid-template-columns:1fr;}
-  .tax-pill{margin:0 auto;}
-  .policy-cards{grid-template-columns:1fr;}
-}
-
-/* ── SERVICES ────────────────────────────────────────── */
-.services-grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));
-  gap:1.4rem;margin-top:3rem;
-}
+/* ===== SERVICES ===== */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .svc{
-  background:var(--card);
-  border:1px solid rgba(232,161,42,.11);
-  border-radius:18px;padding:2rem;
-  position:relative;overflow:hidden;
-  transition:transform .3s,border-color .3s,box-shadow .3s;
-  backdrop-filter:blur(10px);
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px 26px;transition:.4s;position:relative;overflow:hidden;
 }
-.svc:hover{
-  transform:translateY(-7px);
-  border-color:rgba(232,161,42,.34);
-  box-shadow:0 22px 44px rgba(0,0,0,.38),0 0 32px rgba(232,161,42,.07);
+.svc::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--amber),transparent);transform:scaleX(0);transform-origin:left;transition:.4s}
+.svc:hover{transform:translateY(-6px);border-color:rgba(245,158,11,.4);background:rgba(245,158,11,.04)}
+.svc:hover::before{transform:scaleX(1)}
+.svc .ic{
+  width:54px;height:54px;border-radius:14px;display:grid;place-items:center;margin-bottom:18px;
+  background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.25);
 }
-.svc::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,transparent,var(--gold),transparent);
-  opacity:0;transition:opacity .3s;
-}
-.svc:hover::before{opacity:1;}
-.svc-icon{
-  width:54px;height:54px;border-radius:13px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:1.5rem;margin-bottom:1.1rem;
-}
-.i-gold{background:rgba(232,161,42,.12);}
-.i-solar{background:rgba(255,123,53,.12);}
-.i-teal{background:rgba(45,212,191,.10);}
-.i-blue{background:rgba(99,148,255,.12);}
-.svc-name{font-size:1.05rem;font-weight:600;margin-bottom:.55rem;}
-.svc-desc{font-size:.85rem;color:var(--muted);line-height:1.72;}
-.svc-tag{
-  display:inline-block;margin-top:.9rem;
-  padding:.22rem .75rem;border-radius:100px;
-  font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;
-}
-.t-gold{background:rgba(232,161,42,.11);color:var(--gold2);border:1px solid rgba(232,161,42,.2);}
-.t-solar{background:rgba(255,123,53,.11);color:var(--solar2);border:1px solid rgba(255,123,53,.2);}
-.t-teal{background:rgba(45,212,191,.09);color:var(--teal2);border:1px solid rgba(45,212,191,.2);}
+.svc .ic svg{width:26px;height:26px;stroke:var(--amber);fill:none;stroke-width:1.8}
+.svc h3{font-size:1.16rem;margin-bottom:8px}
+.svc p{color:var(--gray);font-size:.92rem;line-height:1.6}
 
-/* ── STATS BAND ──────────────────────────────────────── */
-.stats-band{
-  position:relative;z-index:1;
-  background:linear-gradient(135deg,rgba(13,20,40,.92),rgba(20,28,56,.92));
-  border-top:1px solid rgba(232,161,42,.10);
-  border-bottom:1px solid rgba(232,161,42,.10);
-  padding:4rem 2rem;
+/* ===== BEFORE / AFTER ===== */
+.ba-wrap{max-width:860px;margin:0 auto}
+.ba{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  aspect-ratio:16/9;cursor:ew-resize;user-select:none;border:1px solid var(--line);
 }
-.stats-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:2rem;max-width:1100px;margin:0 auto;text-align:center;
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .after-img{clip-path:inset(0 0 0 50%)}
+.ba .handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--amber);transform:translateX(-50%);z-index:5;box-shadow:0 0 18px rgba(245,158,11,.7)}
+.ba .handle::after{
+  content:'⟷';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:46px;height:46px;border-radius:50%;background:var(--amber);color:var(--navy);
+  display:grid;place-items:center;font-size:1.3rem;font-weight:700;box-shadow:0 4px 16px rgba(0,0,0,.4);
 }
-.sb-num{
-  font-size:3rem;font-weight:800;line-height:1;
-  background:linear-gradient(135deg,var(--gold),var(--solar));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
-.sb-unit{font-size:1.1rem;color:var(--gold2);}
-.sb-lbl{font-size:.77rem;color:var(--muted);margin-top:.4rem;letter-spacing:.08em;}
-@media(max-width:768px){.stats-grid{grid-template-columns:repeat(2,1fr);}}
+.ba .tag{position:absolute;top:16px;padding:6px 14px;border-radius:30px;font-size:.78rem;font-weight:700;z-index:6;backdrop-filter:blur(6px)}
+.ba .tag.b{left:16px;background:rgba(15,23,42,.8);color:var(--gray)}
+.ba .tag.a{right:16px;background:rgba(245,158,11,.9);color:var(--navy)}
 
-/* ── PROCESS ─────────────────────────────────────────── */
-.proc-row{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:4rem;align-items:center;margin-top:3rem;
+/* ===== ROI CALCULATOR ===== */
+.roi{background:var(--black);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.roi-card{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+  background:var(--slate);border:1px solid var(--line);border-radius:24px;overflow:hidden;
+  max-width:1000px;margin:0 auto;box-shadow:0 30px 80px rgba(0,0,0,.4);
 }
-.proc-list{list-style:none;}
-.proc-item{
-  display:flex;gap:1.5rem;margin-bottom:2rem;
-  position:relative;
+.roi-in{padding:48px}
+.roi-in label{display:block;font-weight:600;margin-bottom:10px;font-size:.96rem}
+.roi-in .hint{color:var(--gray-d);font-size:.84rem;margin-bottom:30px}
+.slider-row{margin-bottom:34px}
+.slider-row .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.slider-row .val{font-family:var(--font-num);font-size:1.5rem;font-weight:700;color:var(--amber)}
+input[type=range]{
+  -webkit-appearance:none;width:100%;height:6px;border-radius:6px;
+  background:linear-gradient(90deg,var(--amber) var(--p,40%),rgba(255,255,255,.12) var(--p,40%));outline:none;
 }
-.proc-item:not(:last-child)::after{
-  content:'';position:absolute;left:22px;top:50px;
-  width:1px;height:calc(100% - 10px);
-  background:linear-gradient(to bottom,rgba(232,161,42,.3),transparent);
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:var(--amber);
+  cursor:pointer;border:4px solid var(--navy);box-shadow:0 2px 10px rgba(245,158,11,.5);
 }
-.proc-num{
-  flex-shrink:0;width:44px;height:44px;border-radius:50%;
-  border:1px solid rgba(232,161,42,.38);
-  display:flex;align-items:center;justify-content:center;
-  font-size:.84rem;font-weight:600;color:var(--gold);
-  background:rgba(232,161,42,.06);
+input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--amber);cursor:pointer;border:4px solid var(--navy)}
+.roi-out{
+  padding:48px;background:linear-gradient(155deg,#0B1220,#0F172A);
+  display:flex;flex-direction:column;justify-content:center;gap:22px;position:relative;
 }
-.proc-text h4{font-size:1rem;font-weight:600;margin-bottom:.3rem;}
-.proc-text p{font-size:.84rem;color:var(--muted);line-height:1.65;}
+.roi-out::before{content:'';position:absolute;top:0;right:0;width:160px;height:160px;background:radial-gradient(circle,rgba(245,158,11,.18),transparent 70%)}
+.roi-res{position:relative;z-index:2}
+.roi-res .lbl{color:var(--gray);font-size:.9rem;margin-bottom:4px}
+.roi-res .v{font-family:var(--font-num);font-weight:700;line-height:1}
+.roi-res.big .v{font-size:2.6rem;color:var(--amber)}
+.roi-res .v{font-size:1.7rem;color:var(--white)}
+.roi-res .unit{font-size:1rem;color:var(--gray);font-weight:400;margin-left:6px}
+.roi-divide{height:1px;background:var(--line);margin:4px 0}
+.roi-grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.roi-note{font-size:.78rem;color:var(--gray-d);margin-top:8px;position:relative;z-index:2}
 
-/* solar orbit visual */
-.orbit-wrap{
-  position:relative;height:360px;
-  display:flex;align-items:center;justify-content:center;
+/* ===== PROCESS ===== */
+.proc{display:grid;grid-template-columns:repeat(6,1fr);gap:0;position:relative}
+.proc::before{content:'';position:absolute;top:34px;left:8%;right:8%;height:2px;background:linear-gradient(90deg,var(--amber),rgba(245,158,11,.2))}
+.step{text-align:center;padding:0 10px;position:relative;z-index:2}
+.step .n{
+  width:68px;height:68px;border-radius:50%;margin:0 auto 18px;
+  background:var(--navy);border:2px solid var(--amber);
+  display:grid;place-items:center;font-family:var(--font-num);font-weight:700;font-size:1.4rem;color:var(--amber);
+  transition:.4s;
 }
-.orbit{
-  position:absolute;border-radius:50%;
-  border:1px dashed rgba(255,123,53,.22);
-}
-.o1{width:300px;height:300px;animation:spin 32s linear infinite;}
-.o2{width:210px;height:210px;animation:spin 22s linear infinite reverse;}
-@keyframes spin{to{transform:rotate(360deg);}}
-.orbit-core{
-  position:absolute;
-  width:120px;height:120px;border-radius:50%;
-  background:radial-gradient(circle,rgba(255,175,50,.32) 0%,rgba(255,123,53,.14) 50%,transparent 70%);
-  display:flex;align-items:center;justify-content:center;
-  font-size:3.2rem;
-  box-shadow:0 0 50px rgba(255,123,53,.32),0 0 100px rgba(255,123,53,.10);
-  animation:coreGlow 3.5s ease-in-out infinite;
-  z-index:2;
-}
-@keyframes coreGlow{
-  0%,100%{box-shadow:0 0 50px rgba(255,123,53,.32),0 0 100px rgba(255,123,53,.10);}
-  50%{box-shadow:0 0 70px rgba(255,123,53,.55),0 0 140px rgba(255,123,53,.18);}
-}
-.orbit-tag{
-  position:absolute;
-  background:var(--card);border-radius:10px;padding:.55rem .95rem;
-  font-size:.73rem;white-space:nowrap;
-  backdrop-filter:blur(10px);border:1px solid rgba(232,161,42,.18);
-}
-.ot1{top:5px;right:-20px;color:var(--gold2);border-color:rgba(232,161,42,.28);}
-.ot2{bottom:25px;right:-30px;color:var(--teal2);border-color:rgba(45,212,191,.25);}
-.ot3{bottom:25px;left:-30px;color:var(--solar2);border-color:rgba(255,123,53,.25);}
-.ot4{top:5px;left:-20px;color:#c4b5fd;border-color:rgba(167,139,250,.25);}
-@media(max-width:768px){.proc-row{grid-template-columns:1fr;}.orbit-wrap{display:none;}}
+.step:hover .n{background:var(--amber);color:var(--navy);transform:scale(1.08);box-shadow:0 8px 24px rgba(245,158,11,.45)}
+.step h4{font-family:var(--font-head);font-size:1.05rem;font-weight:700;margin-bottom:6px}
+.step p{color:var(--gray);font-size:.85rem}
 
-/* ── CONTACT ─────────────────────────────────────────── */
-.contact-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:2.5rem;margin-top:3rem;
+/* ===== CONTACT ===== */
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:stretch}
+.contact-info{display:flex;flex-direction:column;gap:18px}
+.cinfo{
+  display:flex;align-items:center;gap:18px;padding:22px;
+  background:var(--card);border:1px solid var(--line);border-radius:16px;transition:.3s;
 }
-@media(max-width:768px){.contact-grid{grid-template-columns:1fr;}}
+.cinfo:hover{border-color:rgba(245,158,11,.4);background:rgba(245,158,11,.04);transform:translateX(4px)}
+.cinfo .ic{width:50px;height:50px;border-radius:13px;background:rgba(245,158,11,.12);display:grid;place-items:center;flex-shrink:0}
+.cinfo .ic svg{width:24px;height:24px;stroke:var(--amber);fill:none;stroke-width:1.8}
+.cinfo .lbl{color:var(--gray);font-size:.82rem}
+.cinfo .v{font-weight:600;font-size:1.06rem}
+.map-box{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:420px;height:100%}
+.map-box iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.3) invert(.9) hue-rotate(180deg) contrast(.9)}
 
-.info-card{
-  background:var(--card);
-  border:1px solid rgba(45,212,191,.14);
-  border-radius:20px;padding:2.4rem;
-  backdrop-filter:blur(12px);
+/* ===== FINAL CTA ===== */
+.final{
+  text-align:center;padding:110px 0;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#1E293B,#0F172A);
 }
-.info-card h3{
-  font-size:1.15rem;font-weight:600;color:var(--teal2);
-  margin-bottom:1.5rem;display:flex;align-items:center;gap:.55rem;
-}
-.ci{
-  display:flex;align-items:flex-start;gap:1rem;
-  padding:1rem 0;border-bottom:1px solid rgba(255,255,255,.05);
-}
-.ci:last-child{border-bottom:none;padding-bottom:0;}
-.ci-icon{
-  width:36px;height:36px;border-radius:9px;
-  background:rgba(45,212,191,.09);
-  display:flex;align-items:center;justify-content:center;
-  font-size:1rem;flex-shrink:0;
-}
-.ci-lbl{font-size:.63rem;color:var(--muted);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.2rem;}
-.ci-val{font-size:.94rem;line-height:1.55;}
-.ci-val a{color:var(--teal2);text-decoration:none;font-size:1.2rem;font-weight:700;}
+.final h2{font-size:clamp(2rem,5vw,3.4rem);margin-bottom:18px}
+.final p{color:var(--gray);font-size:1.15rem;margin-bottom:14px}
+.final .phone{font-family:var(--font-num);font-size:clamp(2.2rem,6vw,3.6rem);font-weight:700;color:var(--amber);margin:18px 0 34px;letter-spacing:.02em}
+.final .phone:hover{text-shadow:0 0 30px rgba(245,158,11,.5)}
 
-/* LINE card */
-.line-card{
-  background:linear-gradient(135deg,#001c0a,#003012);
-  border:1px solid rgba(0,200,80,.28);
-  border-radius:20px;padding:2.4rem;text-align:center;
-  box-shadow:0 0 45px rgba(0,200,80,.10);
-}
-.line-emo{font-size:2.8rem;margin-bottom:.4rem;}
-.line-title{font-size:1.35rem;font-weight:700;color:var(--green);margin-bottom:.2rem;}
-.line-sub{font-size:.76rem;color:#86efac;margin-bottom:1.4rem;letter-spacing:.1em;}
-.qr-wrap{
-  width:176px;height:176px;
-  background:#fff;border-radius:14px;
-  margin:0 auto 1.2rem;
-  display:flex;align-items:center;justify-content:center;
-  padding:6px;
-  box-shadow:0 0 24px rgba(0,200,80,.22);
-}
-.qr-wrap img{width:100%;height:100%;border-radius:8px;}
-.line-phone{font-size:1.7rem;font-weight:800;color:var(--green);letter-spacing:.04em;text-shadow:0 0 22px rgba(0,200,80,.45);}
-.line-phone-lbl{font-size:.68rem;color:#86efac;letter-spacing:.2em;text-transform:uppercase;margin-top:.2rem;}
-.line-note{
-  margin-top:1.4rem;padding:.9rem 1.1rem;
-  background:rgba(0,200,80,.09);
-  border-radius:11px;border:1px solid rgba(0,200,80,.18);
-}
-.line-note p{font-size:.76rem;color:#86efac;line-height:1.75;}
+/* ===== FOOTER ===== */
+footer{background:var(--black);border-top:1px solid var(--line);padding:54px 0 30px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.foot-brand p{color:var(--gray);font-size:.92rem;margin-top:16px;max-width:330px}
+.foot-col h4{font-size:1rem;margin-bottom:18px;color:var(--white)}
+.foot-col a{display:block;color:var(--gray);font-size:.92rem;margin-bottom:11px;transition:.25s}
+.foot-col a:hover{color:var(--amber);padding-left:4px}
+.foot-bot{border-top:1px solid var(--line);padding-top:24px;text-align:center;color:var(--gray-d);font-size:.85rem}
 
-/* map & address */
-.addr-wrap{
-  margin-top:2.2rem;
-  background:var(--card);border:1px solid rgba(232,161,42,.14);
-  border-radius:20px;padding:2.2rem;
-  display:flex;gap:2.5rem;align-items:flex-start;
-  backdrop-filter:blur(10px);
+/* ===== FLOATING ===== */
+.float{position:fixed;right:20px;bottom:20px;z-index:900;display:flex;flex-direction:column;gap:12px}
+.fbtn{
+  width:54px;height:54px;border-radius:50%;display:grid;place-items:center;cursor:pointer;
+  box-shadow:0 6px 20px rgba(0,0,0,.4);transition:.3s;border:none;position:relative;
 }
-.addr-icon{
-  width:76px;height:76px;border-radius:18px;
-  background:rgba(232,161,42,.10);border:1px solid rgba(232,161,42,.2);
-  display:flex;align-items:center;justify-content:center;
-  font-size:1.9rem;flex-shrink:0;
-}
-.addr-text h3{font-size:1.05rem;font-weight:600;color:var(--gold2);margin-bottom:.4rem;}
-.addr-text p{font-size:.92rem;color:var(--muted);line-height:1.8;}
-.map-frame{
-  width:100%;height:300px;border-radius:16px;margin-top:1.8rem;overflow:hidden;
-  border:1px solid rgba(232,161,42,.14);
-}
-.map-frame iframe{
-  width:100%;height:100%;border:none;
-  filter:invert(90%) hue-rotate(180deg) brightness(.9) saturate(.7);
-}
-@media(max-width:768px){.addr-wrap{flex-direction:column;gap:1.2rem;}}
+.fbtn:hover{transform:scale(1.12)}
+.fbtn svg{width:26px;height:26px}
+.fbtn.call{background:var(--amber)}
+.fbtn.line{background:#06C755}
+.fbtn.fb{background:#1877F2}
+.fbtn.top{background:var(--slate);border:1px solid var(--line);opacity:0;pointer-events:none}
+.fbtn.top.show{opacity:1;pointer-events:auto}
+.fbtn.top svg{stroke:var(--white)}
 
-/* ── FOOTER ──────────────────────────────────────────── */
-footer{
-  position:relative;z-index:1;
-  background:linear-gradient(to top,#030509,var(--navy));
-  border-top:1px solid rgba(232,161,42,.10);
-  padding:3.5rem 2rem;text-align:center;
+/* ===== LIGHTBOX ===== */
+.lb{position:fixed;inset:0;background:rgba(8,12,22,.96);z-index:2000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(8px)}
+.lb.open{display:flex;animation:fade .3s}
+.lb img{max-width:90%;max-height:86vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lb .x{position:absolute;top:24px;right:30px;font-size:2.4rem;color:#fff;cursor:pointer;line-height:1;background:none;border:none}
+.lb .arrow{position:absolute;top:50%;transform:translateY(-50%);font-size:2.6rem;color:#fff;cursor:pointer;background:rgba(255,255,255,.08);width:54px;height:54px;border-radius:50%;border:none;display:grid;place-items:center;transition:.3s}
+.lb .arrow:hover{background:var(--amber);color:var(--navy)}
+.lb .prev{left:24px}.lb .next{right:24px}
+.lb .cap{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);color:var(--gray);font-size:.95rem}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(36px);transition:.8s cubic-bezier(.22,1,.36,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:980px){
+  .menu{
+    position:fixed;top:0;right:-100%;width:280px;height:100vh;flex-direction:column;
+    background:var(--slate);padding:100px 36px;gap:24px;align-items:flex-start;transition:.4s;
+    box-shadow:-10px 0 40px rgba(0,0,0,.4);
+  }
+  .menu.open{right:0}
+  .menu .btn{width:100%;justify-content:center}
+  .hamburger{display:flex;z-index:1001}
+  .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,6px)}
+  .hamburger.active span:nth-child(2){opacity:0}
+  .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-6px)}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+  .stat:nth-child(2)::after{display:none}
+  .gallery{columns:2}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .roi-card{grid-template-columns:1fr}
+  .proc{grid-template-columns:repeat(3,1fr);gap:30px 0}
+  .proc::before{display:none}
+  .contact-grid{grid-template-columns:1fr}
 }
-.footer-brand{
-  font-size:1.9rem;font-weight:800;
-  background:linear-gradient(135deg,var(--gold),var(--solar));
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-  margin-bottom:.7rem;
+@media(max-width:560px){
+  .sec{padding:70px 0}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery{columns:1}
+  .svc-grid{grid-template-columns:1fr}
+  .proc{grid-template-columns:repeat(2,1fr)}
+  .roi-in,.roi-out{padding:32px 26px}
+  .roi-grid2{grid-template-columns:1fr}
+  .hero-cta{flex-direction:column}
+  .hero-cta .btn{width:100%;justify-content:center}
+  .float{right:14px;bottom:14px}
+  .fbtn{width:48px;height:48px}
 }
-.footer-th{font-size:.82rem;color:var(--muted);letter-spacing:.08em;}
-.footer-info{font-size:.8rem;color:var(--muted);margin-top:.9rem;line-height:1.85;}
-.footer-links{
-  display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:1.8rem;
-}
-.footer-links a{
-  display:inline-flex;align-items:center;gap:.4rem;
-  padding:.38rem 1.1rem;border-radius:100px;
-  text-decoration:none;font-size:.78rem;
-  transition:background .2s;
-}
-.fl-fb{background:rgba(24,119,242,.14);border:1px solid rgba(24,119,242,.28);color:#93c5fd;}
-.fl-fb:hover{background:rgba(24,119,242,.24);}
-.fl-tel{background:rgba(45,212,191,.10);border:1px solid rgba(45,212,191,.24);color:var(--teal2);}
-.fl-tel:hover{background:rgba(45,212,191,.2);}
-.footer-copy{font-size:.68rem;color:rgba(136,146,176,.45);margin-top:2rem;letter-spacing:.05em;}
 </style>
 </head>
 <body>
 
-<!-- bg -->
-<div class="bg-wrap"><div class="grid"></div></div>
-
-<!-- NAV -->
-<nav>
-  <div class="nav-brand">MD<span> Engineering &amp; Supply</span></div>
-  <ul class="nav-links">
-    <li><a href="#solar">โซล่าเซลล์</a></li>
-    <li><a href="#services">บริการ</a></li>
-    <li><a href="#process">กระบวนการ</a></li>
-    <li><a href="#contact" class="nav-cta">📞 ติดต่อ</a></li>
-  </ul>
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav">
+  <a href="#home" class="brand">
+    <span class="mark">MD</span>
+    <span>MD Engineering
+      <small>& Supply Co., Ltd.</small>
+    </span>
+  </a>
+  <div class="menu" id="menu">
+    <a href="#home">หน้าแรก</a>
+    <a href="#projects">ผลงาน</a>
+    <a href="#services">บริการ</a>
+    <a href="#about">เกี่ยวกับเรา</a>
+    <a href="#contact">ติดต่อ</a>
+    <a href="#contact" class="btn btn-amber">ขอใบเสนอราคา</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="เมนู"><span></span><span></span><span></span></button>
 </nav>
 
-<!-- TICKER -->
-<div class="ticker-bar">
-  <div class="ticker-inner">
-    🌟 ติดตั้งโซล่าเซลล์ รัฐช่วยลดหย่อนภาษี 200,000 บาท &nbsp;|&nbsp;
-    ☎️ โทร 095-291-4565 &nbsp;|&nbsp;
-    🏗️ พื้น Epoxy &amp; PU มาตรฐานอุตสาหกรรม &nbsp;|&nbsp;
-    ⚡ ประหยัดค่าไฟสูงสุด 40% &nbsp;|&nbsp;
-    🔧 วิศวกรรมครบวงจร บางบัวทอง นนทบุรี &nbsp;|&nbsp;
-    🌟 ติดตั้งโซล่าเซลล์ รัฐช่วยลดหย่อนภาษี 200,000 บาท &nbsp;|&nbsp;
-    ☎️ โทร 095-291-4565 &nbsp;|&nbsp;
-    🏗️ พื้น Epoxy &amp; PU มาตรฐานอุตสาหกรรม &nbsp;|&nbsp;
-    ⚡ ประหยัดค่าไฟสูงสุด 40% &nbsp;|&nbsp;
-    🔧 วิศวกรรมครบวงจร บางบัวทอง นนทบุรี &nbsp;|&nbsp;
-  </div>
-</div>
-
 <!-- ===== HERO ===== -->
-<section class="hero">
-  <div class="ring ring-1"></div>
-  <div class="ring ring-2"></div>
-  <div class="ring ring-3"></div>
-  <div class="rays-wrap">
-    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
-    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
-    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
-    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
-    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
-    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
-    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
-    <div class="ray"></div><div class="ray"></div><div class="ray"></div>
+<header class="hero" id="home">
+  <div class="hero-bg">
+    <!-- 🔁 แทนที่ด้วยรูปผลงานจริงจาก Facebook: เปลี่ยน src เป็นชื่อไฟล์รูป เช่น images/hero.jpg -->
+    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2000&auto=format&fit=crop" alt="Solar Rooftop Installation">
   </div>
-
-  <div class="hero-inner">
-    <div class="badge">จดทะเบียนถูกต้อง · บางบัวทอง นนทบุรี</div>
-    <h1 class="hero-title">
-      <span class="grad">MD</span><br>Engineering<br>&amp; Supply
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span>ควบคุมงานโดยวิศวกรผู้เชี่ยวชาญ 100%</span>
+    <h1>
+      <span class="line"><span style="animation-delay:.1s">ผู้เชี่ยวชาญด้าน <span class="amber">Solar Rooftop</span></span></span>
+      <span class="line"><span style="animation-delay:.25s">Epoxy Floor, Waterproofing</span></span>
+      <span class="line"><span style="animation-delay:.4s">และระบบวิศวกรรมครบวงจร</span></span>
     </h1>
-    <p class="hero-en">เอ็ม.ดี. เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด</p>
-    <p class="hero-tag">☀️ Solar Cell &nbsp;·&nbsp; 🏗️ Epoxy Floor &nbsp;·&nbsp; ⚡ Electrical System</p>
-    <div class="hero-divider"></div>
-    <div class="hero-kpi">
-      <div><div class="kpi-num">15+</div><div class="kpi-lbl">ปีประสบการณ์</div></div>
-      <div><div class="kpi-num">500+</div><div class="kpi-lbl">โปรเจคสำเร็จ</div></div>
-      <div><div class="kpi-num">200K</div><div class="kpi-lbl">ลดหย่อนภาษีโซล่า</div></div>
+    <p class="sub">สำรวจหน้างาน<b>ฟรี</b> · ออกแบบ<b>ฟรี</b> · เสนอราคาภายใน <b>24 ชั่วโมง</b> ด้วยมาตรฐานงานวิศวกรรมระดับองค์กร</p>
+    <div class="hero-cta">
+      <a href="tel:0952914565" class="btn btn-amber btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        โทรเลย 095-291-4565
+      </a>
+      <a href="https://line.me/ti/p/eDE1lPEqK3" target="_blank" rel="noopener" class="btn btn-line btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.1c0 4 3.55 7.34 8.35 7.97.32.07.77.22.88.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55s5.86-3.45 8-5.91C21.36 13.35 22 11.79 22 10.1 22 5.64 17.52 2 12 2z"/></svg>
+        แชทผ่าน LINE
+      </a>
+      <a href="#contact" class="btn btn-ghost btn-lg">ขอใบเสนอราคา</a>
     </div>
   </div>
-  <div class="scroll-hint"><span>เลื่อนดู</span><div></div></div>
+  <div class="scroll-ind"><div class="mouse"></div><span>เลื่อนลง</span></div>
+  <div class="glow" style="width:400px;height:400px;background:var(--amber);top:10%;right:-100px;opacity:.15"></div>
+</header>
+
+<!-- ===== STATS ===== -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat reveal"><div class="num" data-count="15" data-suffix="+">0</div><div class="lbl">ปีประสบการณ์</div></div>
+      <div class="stat reveal"><div class="num" data-count="100" data-suffix="+">0</div><div class="lbl">โครงการสำเร็จ</div></div>
+      <div class="stat reveal"><div class="num" data-count="100" data-suffix="%">0</div><div class="lbl">ควบคุมโดยวิศวกร</div></div>
+      <div class="stat reveal"><div class="num">24<span style="font-size:1.4rem"> ชม.</span></div><div class="lbl">ออกใบเสนอราคา</div></div>
+    </div>
+  </div>
 </section>
 
-<!-- ===== SOLAR BANNER ===== -->
-<section id="solar" style="padding:3rem 2rem 1rem">
+<!-- ===== PROJECTS ===== -->
+<section class="sec" id="projects">
   <div class="wrap">
-    <div class="solar-banner fi">
-      <div class="solar-grid">
-        <div>
-          <div class="solar-mini-badge">🏛️ นโยบายรัฐบาล 2567–2568</div>
-          <h2 class="solar-h">
-            ติดตั้งโซล่าเซลล์<br>
-            <span>รัฐช่วยลดหย่อนภาษีสูงสุด</span>
-          </h2>
-          <p class="solar-desc">
-            ตามนโยบายส่งเสริมพลังงานสะอาด ผู้ที่ติดตั้งโซล่าเซลล์บนที่พักอาศัย
-            และอาคารพาณิชย์ สามารถนำค่าใช้จ่ายมาลดหย่อนภาษีได้สูงสุด
-            <strong style="color:var(--solar)">200,000 บาท</strong>
-            ประหยัดค่าไฟระยะยาว คืนทุนภายใน 2–4 ปี
-            ทีมวิศวกร MD Engineering ดูแลครบทุกขั้นตอน
-          </p>
-        </div>
-        <div class="tax-pill">
-          <div class="tax-lbl">ลดหย่อนภาษีสูงสุด</div>
-          <div class="tax-num">200,000</div>
-          <div class="tax-sub">บาท / ท่าน</div>
-        </div>
+    <div class="sec-head reveal">
+      <div class="sec-tag">Featured Projects</div>
+      <h2>ผลงานจริงที่เราภูมิใจ</h2>
+      <p>ตัวอย่างโครงการที่ทีมวิศวกรของเราออกแบบและติดตั้งด้วยมาตรฐานสูงสุด</p>
+    </div>
+    <div class="gallery" id="gallery">
+      <!-- 🔁 แต่ละ gitem: เปลี่ยน src เป็นรูปผลงานจริงจาก Facebook (เช่น images/project1.jpg) -->
+      <div class="gitem reveal" data-cap="Solar Rooftop – โรงงานอุตสาหกรรม">
+        <span class="badge">Solar Rooftop</span>
+        <img src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?q=80&w=900&auto=format&fit=crop" alt="Solar Rooftop" loading="lazy">
+        <div class="ov"><span class="cat">Solar Rooftop</span><span class="t">ระบบโซลาร์โรงงาน</span></div>
       </div>
-      <div class="policy-cards">
-        <div class="pc">
-          <div class="pc-icon">🏡</div>
-          <h4>บ้านพักอาศัย</h4>
-          <p>Solar Rooftop ประหยัดค่าไฟสูงสุด 40% รองรับระบบ On-Grid, Off-Grid และ Hybrid</p>
-        </div>
-        <div class="pc">
-          <div class="pc-icon">🏭</div>
-          <h4>โรงงาน / อุตสาหกรรม</h4>
-          <p>ลดต้นทุนการผลิต 20–40% เพิ่มความสามารถในการแข่งขัน ประหยัดพลังงานระยะยาว</p>
-        </div>
-        <div class="pc">
-          <div class="pc-icon">📋</div>
-          <h4>ดำเนินการถูกกฎหมาย</h4>
-          <p>ยื่นขออนุญาตกับการไฟฟ้าครบทุกขั้นตอน พร้อมรับประกันระบบและบริการหลังการขาย</p>
-        </div>
+      <div class="gitem reveal" data-cap="Epoxy Floor – พื้นโรงงาน">
+        <span class="badge">Epoxy Floor</span>
+        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=900&auto=format&fit=crop" alt="Epoxy Floor" loading="lazy">
+        <div class="ov"><span class="cat">Epoxy Floor</span><span class="t">พื้นอีพ็อกซี่คุณภาพสูง</span></div>
+      </div>
+      <div class="gitem reveal" data-cap="Waterproofing – งานกันซึมดาดฟ้า">
+        <span class="badge">Waterproofing</span>
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=900&auto=format&fit=crop" alt="Waterproofing" loading="lazy">
+        <div class="ov"><span class="cat">Waterproofing</span><span class="t">ระบบกันซึมครบวงจร</span></div>
+      </div>
+      <div class="gitem reveal" data-cap="Cleanroom – ห้องคลีนรูม">
+        <span class="badge">Cleanroom</span>
+        <img src="https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?q=80&w=900&auto=format&fit=crop" alt="Cleanroom" loading="lazy">
+        <div class="ov"><span class="cat">Cleanroom</span><span class="t">ห้องปลอดเชื้อมาตรฐาน</span></div>
+      </div>
+      <div class="gitem reveal" data-cap="Electrical System – ระบบไฟฟ้า">
+        <span class="badge">Electrical</span>
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=900&auto=format&fit=crop" alt="Electrical" loading="lazy">
+        <div class="ov"><span class="cat">Electrical</span><span class="t">ระบบไฟฟ้าโรงงาน</span></div>
+      </div>
+      <div class="gitem reveal" data-cap="CCTV – ระบบกล้องวงจรปิด">
+        <span class="badge">CCTV</span>
+        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=900&auto=format&fit=crop" alt="CCTV" loading="lazy">
+        <div class="ov"><span class="cat">CCTV</span><span class="t">ระบบรักษาความปลอดภัย</span></div>
+      </div>
+      <div class="gitem reveal" data-cap="Construction – งานก่อสร้าง">
+        <span class="badge">Construction</span>
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=900&auto=format&fit=crop" alt="Construction" loading="lazy">
+        <div class="ov"><span class="cat">Construction</span><span class="t">งานก่อสร้างครบวงจร</span></div>
+      </div>
+      <div class="gitem reveal" data-cap="Iso Wall – ผนังห้องเย็น">
+        <span class="badge">Iso Wall</span>
+        <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=900&auto=format&fit=crop" alt="Iso Wall" loading="lazy">
+        <div class="ov"><span class="cat">Iso Wall</span><span class="t">ผนังฉนวนสำเร็จรูป</span></div>
+      </div>
+      <div class="gitem reveal" data-cap="PU Flooring – พื้นพียู">
+        <span class="badge">PU Flooring</span>
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=900&auto=format&fit=crop" alt="PU Flooring" loading="lazy">
+        <div class="ov"><span class="cat">PU Flooring</span><span class="t">พื้น PU สำหรับโรงงานอาหาร</span></div>
       </div>
     </div>
   </div>
+  <div class="glow" style="width:350px;height:350px;background:#1E40AF;bottom:5%;left:-120px;opacity:.2"></div>
 </section>
 
 <!-- ===== SERVICES ===== -->
-<section id="services">
+<section class="sec" id="services" style="background:var(--black)">
   <div class="wrap">
-    <div class="fi">
-      <div class="sec-label">บริการทั้งหมด</div>
-      <h2 class="sec-h">งานวิศวกรรม<br>ครบวงจร</h2>
-      <p class="sec-p">ทีมวิศวกรผู้เชี่ยวชาญมากกว่า 15 ปี พร้อมให้บริการทั้งภาคอุตสาหกรรมและที่พักอาศัย</p>
+    <div class="sec-head reveal">
+      <div class="sec-tag">Our Services</div>
+      <h2>บริการครบวงจรด้านวิศวกรรม</h2>
+      <p>จบงานในที่เดียว ตั้งแต่ออกแบบ ติดตั้ง จนถึงรับประกัน</p>
     </div>
-
-    <div class="services-grid">
-
-      <div class="svc fi">
-        <div class="svc-icon i-solar">☀️</div>
-        <div class="svc-name">ติดตั้งโซล่าเซลล์</div>
-        <div class="svc-desc">ออกแบบ–ติดตั้งระบบโซล่าเซลล์ครบวงจร On-Grid / Off-Grid / Hybrid
-          รองรับนโยบายลดหย่อนภาษีรัฐ ดำเนินเรื่องการไฟฟ้าให้ครบทุกขั้นตอน</div>
-        <span class="svc-tag t-solar">Solar Energy</span>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+        <h3>Solar Rooftop</h3><p>ติดตั้งระบบโซลาร์เซลล์บนหลังคา ลดค่าไฟระยะยาว คืนทุนไว</p>
       </div>
-
-      <div class="svc fi">
-        <div class="svc-icon i-gold">🏗️</div>
-        <div class="svc-name">พื้น Epoxy &amp; PU</div>
-        <div class="svc-desc">รับเหมาทำพื้น Epoxy Self-Leveling, Epoxy Coating และ Polyurethane
-          สำหรับโรงงาน คลังสินค้า ห้องเย็น และสนามกีฬา มาตรฐานอุตสาหกรรม</div>
-        <span class="svc-tag t-gold">Epoxy Floor</span>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg></div>
+        <h3>Epoxy / PU Flooring</h3><p>พื้นอีพ็อกซี่และ PU ทนทาน เรียบเงา เหมาะกับโรงงานทุกประเภท</p>
       </div>
-
-      <div class="svc fi">
-        <div class="svc-icon i-teal">⚡</div>
-        <div class="svc-name">งานระบบไฟฟ้า</div>
-        <div class="svc-desc">ออกแบบ–ติดตั้งระบบไฟฟ้ากำลังและไฟฟ้าควบคุม ตู้ MDB, MCC, PLC
-          ทั้งงานก่อสร้างใหม่และปรับปรุงระบบเดิม</div>
-        <span class="svc-tag t-teal">Electrical</span>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2s7 7 7 12a7 7 0 0 1-14 0c0-5 7-12 7-12z"/></svg></div>
+        <h3>Waterproofing</h3><p>ระบบกันซึมดาดฟ้า ห้องน้ำ และโครงสร้าง ป้องกันการรั่วซึม 100%</p>
       </div>
-
-      <div class="svc fi">
-        <div class="svc-icon i-gold">💧</div>
-        <div class="svc-name">ระบบกันซึม</div>
-        <div class="svc-desc">งานกันซึมหลังคา พื้น ผนัง และโครงสร้างด้วยสาร Polyurethane
-          และ Epoxy ระดับอุตสาหกรรม อายุการใช้งานยาวนาน ไม่กะเทาะ ไม่ลอก</div>
-        <span class="svc-tag t-gold">Waterproofing</span>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>Electrical System</h3><p>ออกแบบและติดตั้งระบบไฟฟ้าโรงงาน ตามมาตรฐานวิศวกรรม</p>
       </div>
-
-      <div class="svc fi">
-        <div class="svc-icon i-blue">🔩</div>
-        <div class="svc-name">Hi-Crete &amp; Floor Hardener</div>
-        <div class="svc-desc">ระบบ Hi-Crete MF และ Floor Hardener สำหรับพื้นโรงงานรับน้ำหนักหนัก
-          พื้นที่จราจรหนาแน่น ทนทานต่อแรงกระแทกและสารเคมี</div>
-        <span class="svc-tag t-teal">Hi-Crete</span>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>CCTV</h3><p>ระบบกล้องวงจรปิดความละเอียดสูง พร้อมระบบดูผ่านมือถือ</p>
       </div>
-
-      <div class="svc fi">
-        <div class="svc-icon i-solar">🎯</div>
-        <div class="svc-name">ที่ปรึกษาพลังงาน</div>
-        <div class="svc-desc">สำรวจหน้างานฟรี วิเคราะห์ ROI คำนวณคืนทุน และช่วยดำเนินการ
-          เรื่องสิทธิ์ลดหย่อนภาษีกับกรมสรรพากรให้ครบทุกขั้นตอน</div>
-        <span class="svc-tag t-solar">Energy Consult</span>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>Cleanroom</h3><p>ห้องปลอดเชื้อมาตรฐานสากล สำหรับอุตสาหกรรมอาหารและยา</p>
       </div>
-
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="1"/><path d="M2 10h20M2 14h20"/></svg></div>
+        <h3>Iso Wall</h3><p>ผนังฉนวนสำเร็จรูป ติดตั้งเร็ว ควบคุมอุณหภูมิได้ดีเยี่ยม</p>
+      </div>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-3"/></svg></div>
+        <h3>Construction & Renovation</h3><p>งานก่อสร้างและรีโนเวทครบวงจร โดยทีมงานมืออาชีพ</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== STATS BAND ===== -->
-<div class="stats-band">
-  <div class="stats-grid">
-    <div class="fi"><div class="sb-num">40<span class="sb-unit">%</span></div><div class="sb-lbl">ประหยัดค่าไฟจากโซล่าเซลล์</div></div>
-    <div class="fi"><div class="sb-num">2–4<span class="sb-unit" style="font-size:1.2rem"> ปี</span></div><div class="sb-lbl">ระยะเวลาคืนทุน</div></div>
-    <div class="fi"><div class="sb-num">25<span class="sb-unit"> ปี</span></div><div class="sb-lbl">อายุแผงโซล่าเซลล์</div></div>
-    <div class="fi"><div class="sb-num">200K<span class="sb-unit" style="font-size:.95rem"> ฿</span></div><div class="sb-lbl">ลดหย่อนภาษีจากรัฐ</div></div>
+<!-- ===== BEFORE / AFTER ===== -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Before / After</div>
+      <h2>เห็นผลลัพธ์ชัดเจน</h2>
+      <p>ลากเพื่อเปรียบเทียบสภาพก่อนและหลังการทำงานของเรา</p>
+    </div>
+    <div class="ba-wrap reveal">
+      <div class="ba" id="ba">
+        <span class="tag b">ก่อน</span>
+        <span class="tag a">หลัง</span>
+        <!-- 🔁 เปลี่ยน src เป็นรูปก่อน/หลังจริงจาก Facebook -->
+        <img class="before-img" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop" alt="ก่อน">
+        <img class="after-img" src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop" alt="หลัง">
+        <div class="handle" id="baHandle"></div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- ===== ROI CALCULATOR ===== -->
+<section class="sec roi">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-tag">Solar ROI Calculator</div>
+      <h2>คำนวณความคุ้มค่า Solar Rooftop</h2>
+      <p>ประเมินเบื้องต้นว่าติดตั้งโซลาร์แล้วประหยัดและคืนทุนเมื่อไหร่</p>
+    </div>
+    <div class="roi-card reveal">
+      <div class="roi-in">
+        <label>ค่าไฟฟ้าต่อเดือน</label>
+        <div class="hint">เลื่อนเพื่อระบุค่าไฟเฉลี่ยของคุณ</div>
+        <div class="slider-row">
+          <div class="top"><span>ค่าไฟต่อเดือน</span><span class="val" id="billVal">15,000 ฿</span></div>
+          <input type="range" id="bill" min="3000" max="100000" step="1000" value="15000">
+        </div>
+        <div class="slider-row">
+          <div class="top"><span>สัดส่วนใช้ไฟกลางวัน</span><span class="val" id="dayVal">70%</span></div>
+          <input type="range" id="day" min="30" max="100" step="5" value="70">
+        </div>
+        <p class="roi-note">* การคำนวณเป็นการประเมินเบื้องต้น ค่าจริงขึ้นอยู่กับหน้างาน ทิศหลังคา และการใช้งานจริง — ทีมวิศวกรจะสำรวจและออกแบบให้ฟรี</p>
+      </div>
+      <div class="roi-out">
+        <div class="roi-res big"><div class="lbl">ระบบที่แนะนำ</div><div class="v" id="kw">10<span class="unit">kW</span></div></div>
+        <div class="roi-divide"></div>
+        <div class="roi-grid2">
+          <div class="roi-res"><div class="lbl">จำนวนแผง (โดยประมาณ)</div><div class="v" id="panels">18<span class="unit">แผง</span></div></div>
+          <div class="roi-res"><div class="lbl">ประหยัดต่อเดือน</div><div class="v" id="saveM">10,500<span class="unit">฿</span></div></div>
+          <div class="roi-res"><div class="lbl">ประหยัดต่อปี</div><div class="v" id="saveY">126,000<span class="unit">฿</span></div></div>
+          <div class="roi-res"><div class="lbl">ระยะเวลาคืนทุน</div><div class="v" id="payback">4.8<span class="unit">ปี</span></div></div>
+        </div>
+        <a href="#contact" class="btn btn-amber" style="margin-top:14px;justify-content:center">ขอประเมินจริงฟรี</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ===== PROCESS ===== -->
-<section id="process">
+<section class="sec" style="background:var(--black)">
   <div class="wrap">
-    <div class="fi">
-      <div class="sec-label">ขั้นตอนการทำงาน</div>
-      <h2 class="sec-h">กระบวนการที่<br>เป็นระบบ</h2>
+    <div class="sec-head reveal">
+      <div class="sec-tag">How We Work</div>
+      <h2>ขั้นตอนการทำงาน</h2>
+      <p>โปร่งใส ตรวจสอบได้ทุกขั้นตอน ตั้งแต่สำรวจจนส่งมอบ</p>
     </div>
-    <div class="proc-row">
-      <div class="fi">
-        <ul class="proc-list">
-          <li class="proc-item">
-            <div class="proc-num">01</div>
-            <div class="proc-text">
-              <h4>สำรวจและประเมินหน้างาน</h4>
-              <p>ทีมวิศวกรเข้าสำรวจพื้นที่ฟรี วิเคราะห์ความเหมาะสม นำเสนอแผนงานและความเป็นไปได้</p>
-            </div>
-          </li>
-          <li class="proc-item">
-            <div class="proc-num">02</div>
-            <div class="proc-text">
-              <h4>ออกแบบและเสนอราคา</h4>
-              <p>ออกแบบระบบเฉพาะสำหรับโปรเจคของท่าน พร้อมใบเสนอราคาโปร่งใส ไม่มีค่าใช้จ่ายซ่อนเร้น</p>
-            </div>
-          </li>
-          <li class="proc-item">
-            <div class="proc-num">03</div>
-            <div class="proc-text">
-              <h4>ดำเนินการติดตั้ง</h4>
-              <p>ทีมช่างผู้เชี่ยวชาญควบคุมการติดตั้งตามมาตรฐาน ตรวจสอบคุณภาพทุกขั้นตอน</p>
-            </div>
-          </li>
-          <li class="proc-item">
-            <div class="proc-num">04</div>
-            <div class="proc-text">
-              <h4>ส่งมอบและรับประกัน</h4>
-              <p>ส่งมอบงานพร้อมเอกสารครบถ้วน รับประกันผลงาน และบริการหลังการขายตลอดอายุการใช้งาน</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="orbit-wrap fi">
-        <div class="orbit o1"></div>
-        <div class="orbit o2"></div>
-        <div class="orbit-core">☀️</div>
-        <div class="orbit-tag ot1">💡 ลดค่าไฟ 40%</div>
-        <div class="orbit-tag ot2">🌱 Zero Carbon</div>
-        <div class="orbit-tag ot3">💰 ลดหย่อนภาษี</div>
-        <div class="orbit-tag ot4">🔋 กักเก็บพลังงาน</div>
-      </div>
+    <div class="proc">
+      <div class="step reveal"><div class="n">1</div><h4>สำรวจหน้างาน</h4><p>เข้าตรวจหน้างานฟรี</p></div>
+      <div class="step reveal"><div class="n">2</div><h4>ออกแบบ</h4><p>วิศวกรออกแบบให้</p></div>
+      <div class="step reveal"><div class="n">3</div><h4>เสนอราคา</h4><p>ภายใน 24 ชม.</p></div>
+      <div class="step reveal"><div class="n">4</div><h4>ติดตั้ง</h4><p>ทีมช่างมืออาชีพ</p></div>
+      <div class="step reveal"><div class="n">5</div><h4>ส่งมอบ</h4><p>ตรวจรับงานร่วมกัน</p></div>
+      <div class="step reveal"><div class="n">6</div><h4>รับประกัน</h4><p>ดูแลหลังการขาย</p></div>
     </div>
   </div>
 </section>
 
 <!-- ===== CONTACT ===== -->
-<section id="contact" style="background:linear-gradient(180deg,transparent,rgba(13,20,40,.55))">
+<section class="sec" id="contact">
   <div class="wrap">
-    <div class="fi">
-      <div class="sec-label">ติดต่อเรา</div>
-      <h2 class="sec-h">พร้อมให้บริการ<br>ทุกวัน</h2>
-      <p class="sec-p">สำรวจหน้างานฟรี ไม่มีค่าใช้จ่าย โทรหาเราหรือสแกน QR Code ได้เลย</p>
+    <div class="sec-head reveal">
+      <div class="sec-tag">Contact Us</div>
+      <h2>พร้อมให้คำปรึกษา</h2>
+      <p>ติดต่อฝ่ายขาย คุณชาลิสา — เราพร้อมดูแลโครงการของคุณ</p>
     </div>
-
     <div class="contact-grid">
-
-      <!-- Info -->
-      <div class="info-card fi">
-        <h3>📍 ข้อมูลติดต่อ</h3>
-        <div class="ci">
-          <div class="ci-icon">📞</div>
-          <div>
-            <div class="ci-lbl">เบอร์โทรศัพท์</div>
-            <div class="ci-val"><a href="tel:0952914565">095-291-4565</a></div>
-          </div>
-        </div>
-        <div class="ci">
-          <div class="ci-icon">📧</div>
-          <div>
-            <div class="ci-lbl">อีเมล</div>
-            <div class="ci-val">mdengineeringandsupply@gmail.com</div>
-          </div>
-        </div>
-        <div class="ci">
-          <div class="ci-icon">🌐</div>
-          <div>
-            <div class="ci-lbl">เว็บไซต์</div>
-            <div class="ci-val">www.mdengineer.com</div>
-          </div>
-        </div>
-        <div class="ci">
-          <div class="ci-icon">📘</div>
-          <div>
-            <div class="ci-lbl">Facebook</div>
-            <div class="ci-val">
-              <a href="https://www.facebook.com/share/18ZkQPQDb1/" target="_blank" style="font-size:.9rem">
-                MD Engineering and Supply
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="ci">
-          <div class="ci-icon">⏰</div>
-          <div>
-            <div class="ci-lbl">เวลาทำการ</div>
-            <div class="ci-val">จันทร์–เสาร์ &nbsp; 08:00 – 17:30 น.</div>
-          </div>
-        </div>
-        <div class="ci">
-          <div class="ci-icon">🏢</div>
-          <div>
-            <div class="ci-lbl">ที่อยู่</div>
-            <div class="ci-val">133/456 ซอยสำนักงานที่ดินบางบัวทอง<br>ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110</div>
-          </div>
+      <div class="contact-info">
+        <a href="tel:0952914565" class="cinfo reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><div class="lbl">โทรฝ่ายขาย (คุณชาลิสา)</div><div class="v">095-291-4565</div></div>
+        </a>
+        <a href="https://line.me/ti/p/eDE1lPEqK3" target="_blank" rel="noopener" class="cinfo reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="var(--amber)" stroke="none"><path d="M12 2C6.48 2 2 5.64 2 10.1c0 4 3.55 7.34 8.35 7.97.32.07.77.22.88.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55s5.86-3.45 8-5.91C21.36 13.35 22 11.79 22 10.1 22 5.64 17.52 2 12 2z"/></svg></div>
+          <div><div class="lbl">LINE Official</div><div class="v">แชทกับเราได้ทันที</div></div>
+        </a>
+        <a href="mailto:mdengineeringandsupply@gmail.com" class="cinfo reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div>
+          <div><div class="lbl">อีเมล</div><div class="v" style="font-size:.94rem">mdengineeringandsupply@gmail.com</div></div>
+        </a>
+        <a href="https://www.facebook.com/mdengineerandsupply" target="_blank" rel="noopener" class="cinfo reveal">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="var(--amber)" stroke="none"><path d="M24 12a12 12 0 1 0-13.88 11.85v-8.38H7.08V12h3.04V9.36c0-3 1.79-4.67 4.53-4.67 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.87V12h3.33l-.53 3.47h-2.8v8.38A12 12 0 0 0 24 12z"/></svg></div>
+          <div><div class="lbl">Facebook</div><div class="v">MD Engineer & Supply</div></div>
+        </a>
+        <div class="cinfo reveal" style="cursor:default">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="lbl">ที่อยู่สำนักงานใหญ่</div><div class="v" style="font-size:.92rem;line-height:1.45">133/456 ซอยสำนักงานที่ดินบางบัวทอง ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110</div></div>
         </div>
       </div>
-
-      <!-- LINE / QR -->
-      <div class="line-card fi">
-        <div class="line-emo">💬</div>
-        <div class="line-title">LINE &amp; โทรศัพท์</div>
-        <div class="line-sub">แสกน QR หรือกดโทรหาเราได้เลย</div>
-        <div class="qr-wrap">
-          <img
-            src="https://api.qrserver.com/v1/create-qr-code/?size=164x164&data=tel%3A0952914565&color=003520&bgcolor=ffffff&qzone=1&margin=4"
-            alt="QR Code โทร 0952914565"
-            loading="lazy"
-          >
-        </div>
-        <div class="line-phone">095-291-4565</div>
-        <div class="line-phone-lbl">โทร / LINE</div>
-        <div class="line-note">
-          <p>📲 กดโทร หรือสแกน QR Code<br>รับสำรวจหน้างานฟรี ไม่มีค่าใช้จ่าย<br>ใบเสนอราคาภายใน 24 ชั่วโมง</p>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Map -->
-    <div class="fi">
-      <div class="addr-wrap">
-        <div class="addr-icon">📍</div>
-        <div class="addr-text">
-          <h3>สำนักงานใหญ่ · MD Engineering and Supply</h3>
-          <p>
-            133/456 ซอยสำนักงานที่ดินบางบัวทอง ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110<br>
-            <span style="color:var(--teal2);font-size:.83rem;">ใกล้สำนักงานที่ดินบางบัวทอง · ทางหลวงนนทบุรี-สุพรรณบุรี</span>
-          </p>
-        </div>
-      </div>
-      <div class="map-frame">
-        <iframe
-          src="https://maps.google.com/maps?q=13.906,100.423&z=15&output=embed"
-          loading="lazy"
-          title="ที่ตั้ง MD Engineering and Supply บางบัวทอง นนทบุรี"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen
-        ></iframe>
+      <div class="map-box reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425.60340859926254!2d100.4325706775791!3d13.916574514856972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e28ef655555555%3A0xbb22bdd60c78695a!2z4Lia4Lij4Li04Lip4Lix4LiXIOC5gOC4reC5h-C4oeC4lOC4tSDguYDguK3guYfguJnguIjguLTguYDguJnguLXguKLguKPguLTguYjguIcg4LmB4Lit4LiZ4LiU4LmMIOC4i-C4seC4nuC4nuC4peC4suC4oiDguIjguLPguIHguLHguJQ!5e1!3m2!1sth!2sth!4v1779534518402!5m2!1sth!2sth" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-
   </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final">
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="reveal">
+      <h2>พร้อมเริ่มโครงการแล้วหรือยัง?</h2>
+      <p>โทรหาเราได้ทันที ทีมวิศวกรพร้อมให้คำปรึกษาฟรี</p>
+      <a href="tel:0952914565" class="phone">095-291-4565</a>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="tel:0952914565" class="btn btn-amber btn-lg">โทรเลย</a>
+        <a href="https://line.me/ti/p/eDE1lPEqK3" target="_blank" rel="noopener" class="btn btn-line btn-lg">ขอใบเสนอราคาผ่าน LINE</a>
+      </div>
+    </div>
+  </div>
+  <div class="glow" style="width:500px;height:500px;background:var(--amber);top:-150px;left:50%;transform:translateX(-50%);opacity:.12"></div>
 </section>
 
 <!-- ===== FOOTER ===== -->
 <footer>
-  <div class="footer-brand">MD Engineering &amp; Supply</div>
-  <div class="footer-th">บจก. เอ็ม.ดี. เอ็นจิเนียริ่ง แอนด์ ซัพพลาย</div>
-  <div class="footer-info">
-    133/456 ซอยสำนักงานที่ดินบางบัวทอง ต.พิมลราช อ.บางบัวทอง จ.นนทบุรี 11110<br>
-    📞 095-291-4565 &nbsp;·&nbsp; ✉️ mdengineeringandsupply@gmail.com &nbsp;·&nbsp; 🌐 www.mdengineer.com
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#home" class="brand"><span class="mark">MD</span><span>MD Engineering<small>& Supply Co., Ltd.</small></span></a>
+        <p>บริษัท เอ็ม.ดี. เอ็นจิเนียริ่ง แอนด์ ซัพพลาย จำกัด ผู้เชี่ยวชาญงานวิศวกรรมครบวงจร ควบคุมงานโดยวิศวกรมืออาชีพ</p>
+      </div>
+      <div class="foot-col">
+        <h4>บริการ</h4>
+        <a href="#services">Solar Rooftop</a>
+        <a href="#services">Epoxy / PU Flooring</a>
+        <a href="#services">Waterproofing</a>
+        <a href="#services">Cleanroom & Iso Wall</a>
+        <a href="#services">CCTV & Electrical</a>
+      </div>
+      <div class="foot-col">
+        <h4>ติดต่อ</h4>
+        <a href="tel:0952914565">095-291-4565</a>
+        <a href="mailto:mdengineeringandsupply@gmail.com">อีเมล</a>
+        <a href="https://line.me/ti/p/eDE1lPEqK3" target="_blank" rel="noopener">LINE Official</a>
+        <a href="https://www.facebook.com/mdengineerandsupply" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="foot-bot">© 2025 MD Engineering & Supply Co., Ltd. — สงวนลิขสิทธิ์ทุกประการ</div>
   </div>
-  <div class="footer-links">
-    <a href="https://www.facebook.com/share/18ZkQPQDb1/" target="_blank" class="fl-fb">📘 Facebook</a>
-    <a href="tel:0952914565" class="fl-tel">📞 095-291-4565</a>
-  </div>
-  <p class="footer-copy">© 2024–2025 MD Engineering and Supply Co., Ltd. · All rights reserved.</p>
 </footer>
 
+<!-- ===== FLOATING BUTTONS ===== -->
+<div class="float">
+  <a href="tel:0952914565" class="fbtn call" aria-label="โทร"><svg viewBox="0 0 24 24" fill="none" stroke="var(--navy)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+  <a href="https://line.me/ti/p/eDE1lPEqK3" target="_blank" rel="noopener" class="fbtn line" aria-label="LINE"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.48 2 2 5.64 2 10.1c0 4 3.55 7.34 8.35 7.97.32.07.77.22.88.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55s5.86-3.45 8-5.91C21.36 13.35 22 11.79 22 10.1 22 5.64 17.52 2 12 2z"/></svg></a>
+  <a href="https://www.facebook.com/mdengineerandsupply" target="_blank" rel="noopener" class="fbtn fb" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="#fff"><path d="M24 12a12 12 0 1 0-13.88 11.85v-8.38H7.08V12h3.04V9.36c0-3 1.79-4.67 4.53-4.67 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.87V12h3.33l-.53 3.47h-2.8v8.38A12 12 0 0 0 24 12z"/></svg></a>
+  <button class="fbtn top" id="toTop" aria-label="กลับขึ้นบน"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg></button>
+</div>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lb" id="lb">
+  <button class="x" id="lbClose">&times;</button>
+  <button class="arrow prev" id="lbPrev">&#8249;</button>
+  <img id="lbImg" src="" alt="">
+  <button class="arrow next" id="lbNext">&#8250;</button>
+  <div class="cap" id="lbCap"></div>
+</div>
+
 <script>
-  // ── scroll fade-in ──────────────────────────────────
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('vis');
-        io.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.08 });
+// ===== NAV scroll =====
+const nav=document.getElementById('nav');
+const toTop=document.getElementById('toTop');
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  nav.classList.toggle('scrolled',y>60);
+  toTop.classList.toggle('show',y>500);
+});
+toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
-  // stagger siblings in grids
-  document.querySelectorAll('.services-grid, .policy-cards, .stats-grid').forEach(grid => {
-    grid.querySelectorAll('.fi').forEach((el, i) => {
-      el.style.transitionDelay = `${i * 0.1}s`;
-    });
+// ===== Mobile menu =====
+const ham=document.getElementById('hamburger'),menu=document.getElementById('menu');
+ham.addEventListener('click',()=>{ham.classList.toggle('active');menu.classList.toggle('open')});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ham.classList.remove('active');menu.classList.remove('open')}));
+
+// ===== Reveal on scroll =====
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// ===== Counter =====
+const counters=document.querySelectorAll('[data-count]');
+const cio=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const el=e.target,target=+el.dataset.count,suffix=el.dataset.suffix||'';
+      let cur=0;const inc=target/45;
+      const t=setInterval(()=>{cur+=inc;if(cur>=target){cur=target;clearInterval(t)}el.textContent=Math.floor(cur)+suffix},22);
+      cio.unobserve(el);
+    }
   });
+},{threshold:.5});
+counters.forEach(c=>cio.observe(c));
 
-  document.querySelectorAll('.fi').forEach(el => io.observe(el));
+// ===== ROI Calculator =====
+const bill=document.getElementById('bill'),day=document.getElementById('day');
+const billVal=document.getElementById('billVal'),dayVal=document.getElementById('dayVal');
+const fmt=n=>n.toLocaleString('th-TH');
+function calcROI(){
+  const b=+bill.value,d=+day.value/100;
+  // ปรับ slider fill
+  bill.style.setProperty('--p',((b-3000)/(100000-3000)*100)+'%');
+  day.style.setProperty('--p',((d*100-30)/(100-30)*100)+'%');
+  billVal.textContent=fmt(b)+' ฿';
+  dayVal.textContent=Math.round(d*100)+'%';
+  // ค่าไฟเฉลี่ย ~4.2 บ/หน่วย, แดด ~4 ชม.เต็มต่อวัน, 1kW ผลิต ~120 หน่วย/เดือน
+  const unitPrice=4.2;
+  const monthlyUnits=b/unitPrice;
+  const dayUnits=monthlyUnits*d;            // หน่วยที่ใช้ช่วงกลางวัน
+  const kw=Math.max(3,Math.round(dayUnits/120));
+  const panels=Math.round(kw*1000/560);     // แผง 560W
+  const genUnits=kw*120;                     // หน่วยที่ผลิตได้ต่อเดือน
+  const offset=Math.min(genUnits,dayUnits);  // ประหยัดได้ไม่เกินที่ใช้กลางวัน
+  const saveM=Math.round(offset*unitPrice);
+  const saveY=saveM*12;
+  const cost=kw*32000;                       // ต้นทุนประมาณ 32,000/kW
+  const payback=(cost/saveY).toFixed(1);
+  document.getElementById('kw').innerHTML=kw+'<span class="unit">kW</span>';
+  document.getElementById('panels').innerHTML=panels+'<span class="unit">แผง</span>';
+  document.getElementById('saveM').innerHTML=fmt(saveM)+'<span class="unit">฿</span>';
+  document.getElementById('saveY').innerHTML=fmt(saveY)+'<span class="unit">฿</span>';
+  document.getElementById('payback').innerHTML=payback+'<span class="unit">ปี</span>';
+}
+bill.addEventListener('input',calcROI);day.addEventListener('input',calcROI);calcROI();
+
+// ===== Before/After slider =====
+const ba=document.getElementById('ba'),baHandle=document.getElementById('baHandle'),afterImg=ba.querySelector('.after-img');
+let dragging=false;
+function setBA(x){
+  const rect=ba.getBoundingClientRect();
+  let pct=((x-rect.left)/rect.width)*100;
+  pct=Math.max(0,Math.min(100,pct));
+  baHandle.style.left=pct+'%';
+  afterImg.style.clipPath=`inset(0 0 0 ${pct}%)`;
+}
+ba.addEventListener('mousedown',e=>{dragging=true;setBA(e.clientX)});
+window.addEventListener('mousemove',e=>{if(dragging)setBA(e.clientX)});
+window.addEventListener('mouseup',()=>dragging=false);
+ba.addEventListener('touchstart',e=>setBA(e.touches[0].clientX),{passive:true});
+ba.addEventListener('touchmove',e=>setBA(e.touches[0].clientX),{passive:true});
+
+// ===== Lightbox =====
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+const items=[...document.querySelectorAll('.gitem')];
+let idx=0;
+function openLB(i){idx=i;const it=items[i];lbImg.src=it.querySelector('img').src;lbCap.textContent=it.dataset.cap||'';lb.classList.add('open')}
+function closeLB(){lb.classList.remove('open')}
+function nav2(d){idx=(idx+d+items.length)%items.length;openLB(idx)}
+items.forEach((it,i)=>it.addEventListener('click',()=>openLB(i)));
+document.getElementById('lbClose').addEventListener('click',closeLB);
+document.getElementById('lbNext').addEventListener('click',()=>nav2(1));
+document.getElementById('lbPrev').addEventListener('click',()=>nav2(-1));
+lb.addEventListener('click',e=>{if(e.target===lb)closeLB()});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLB();if(e.key==='ArrowRight')nav2(1);if(e.key==='ArrowLeft')nav2(-1)});
 </script>
-
 </body>
 </html>
